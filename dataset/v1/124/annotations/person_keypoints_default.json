@@ -1,0 +1,3798 @@
+{
+  "licenses": [{ "name": "", "id": 0, "url": "" }],
+  "info": {
+    "contributor": "",
+    "date_created": "",
+    "description": "",
+    "url": "",
+    "version": "",
+    "year": ""
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Falling",
+      "supercategory": "",
+      "keypoints": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "skeleton": [
+        [6, 12],
+        [3, 1],
+        [4, 6],
+        [14, 16],
+        [5, 7],
+        [9, 11],
+        [15, 17],
+        [6, 8],
+        [7, 13],
+        [2, 4],
+        [1, 2],
+        [7, 9],
+        [7, 6],
+        [3, 2],
+        [3, 5],
+        [12, 14],
+        [8, 10],
+        [13, 12],
+        [13, 15]
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Standing",
+      "supercategory": "",
+      "keypoints": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "skeleton": [
+        [6, 12],
+        [3, 1],
+        [4, 6],
+        [14, 16],
+        [5, 7],
+        [9, 11],
+        [15, 17],
+        [6, 8],
+        [7, 13],
+        [2, 4],
+        [1, 2],
+        [7, 9],
+        [7, 6],
+        [3, 2],
+        [3, 5],
+        [12, 14],
+        [8, 10],
+        [13, 12],
+        [13, 15]
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Sitting",
+      "supercategory": "",
+      "keypoints": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "skeleton": [
+        [6, 12],
+        [3, 1],
+        [4, 6],
+        [14, 16],
+        [5, 7],
+        [9, 11],
+        [15, 17],
+        [6, 8],
+        [7, 13],
+        [2, 4],
+        [1, 2],
+        [7, 9],
+        [7, 6],
+        [3, 2],
+        [3, 5],
+        [12, 14],
+        [8, 10],
+        [13, 12],
+        [13, 15]
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Walking",
+      "supercategory": "",
+      "keypoints": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "skeleton": [
+        [6, 12],
+        [3, 1],
+        [4, 6],
+        [14, 16],
+        [5, 7],
+        [9, 11],
+        [15, 17],
+        [6, 8],
+        [7, 13],
+        [2, 4],
+        [1, 2],
+        [7, 9],
+        [7, 6],
+        [3, 2],
+        [3, 5],
+        [12, 14],
+        [8, 10],
+        [13, 12],
+        [13, 15]
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Bending",
+      "supercategory": "",
+      "keypoints": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "skeleton": [
+        [6, 12],
+        [3, 1],
+        [4, 6],
+        [14, 16],
+        [5, 7],
+        [9, 11],
+        [15, 17],
+        [6, 8],
+        [7, 13],
+        [2, 4],
+        [1, 2],
+        [7, 9],
+        [7, 6],
+        [3, 2],
+        [3, 5],
+        [12, 14],
+        [8, 10],
+        [13, 12],
+        [13, 15]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000000.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 2,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000001.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 3,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000002.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 4,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000003.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 5,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000004.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 6,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000005.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 7,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000006.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 8,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000007.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 9,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000008.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 10,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000009.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 11,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000010.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 12,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000011.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 13,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000012.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 14,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000013.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 15,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000014.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 16,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000015.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 17,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000016.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 18,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000017.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 19,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000018.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 20,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000019.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 21,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000020.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 22,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000021.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 23,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000022.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 24,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000023.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 25,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000024.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 26,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000025.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 27,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000026.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 28,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000027.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 29,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000028.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 30,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000029.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 31,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000030.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 32,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000031.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 33,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000032.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 34,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000033.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 35,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000034.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 36,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000035.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 37,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000036.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 38,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000037.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 39,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000038.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 40,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000039.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 41,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000040.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 42,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000041.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 43,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000042.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 44,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000043.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 45,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000044.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 46,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000045.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 47,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000046.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 48,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000047.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 49,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000048.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 50,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000049.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 51,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000050.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 52,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000051.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 53,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000052.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 54,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000053.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 55,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000054.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 56,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000055.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 57,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000056.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 58,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000057.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 59,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000058.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 60,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000059.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 61,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000060.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 62,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000061.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 63,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000062.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 64,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000063.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 65,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000064.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 66,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000065.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 67,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000066.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 68,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000067.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 69,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000068.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 70,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000069.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 71,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000070.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 72,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000071.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 73,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000072.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 74,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000073.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 75,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000074.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 76,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000075.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 77,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000076.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 78,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000077.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 79,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000078.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 80,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000079.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 81,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000080.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 82,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000081.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 83,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000082.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 84,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000083.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 85,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000084.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 86,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000085.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 87,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000086.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 88,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000087.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 89,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000088.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 90,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000089.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 91,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000090.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 92,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000091.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 93,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000092.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 94,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000093.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 95,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000094.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 96,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000095.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 97,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000096.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 98,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000097.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 99,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000098.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 100,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000099.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 101,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000100.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 102,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000101.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 103,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000102.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 104,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000103.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 105,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000104.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 106,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000105.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 107,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000106.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 108,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000107.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 109,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000108.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 110,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000109.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 111,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000110.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 112,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000111.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 113,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000112.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 114,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000113.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 115,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000114.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 116,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000115.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 117,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000116.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 118,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000117.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 119,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000118.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 120,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000119.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 121,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000120.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 122,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000121.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 123,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000122.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 124,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000123.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 125,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000124.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 126,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000125.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 127,
+      "width": 1280,
+      "height": 720,
+      "file_name": "frame_000126.png",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9920.586600000008,
+      "bbox": [617.17, 315.52, 58.57, 169.38],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        675.74, 319.96, 2, 673.9, 316.13, 2, 675.48, 315.52, 1, 660.44, 318.43,
+        2, 662.7, 316.66, 1, 646.01, 337.64, 2, 654.26, 331.34, 1, 630.12,
+        376.62, 2, 641.02, 366.83, 1, 624.66, 408.38, 2, 634.86, 392.94, 1,
+        622.21, 401.64, 2, 634.94, 397.23, 1, 640.84, 444.4, 2, 650.83, 442.77,
+        2, 617.17, 482.96, 2, 639.49, 484.9, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 2,
+      "image_id": 2,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9199.186500000003,
+      "bbox": [625.41, 317.89, 53.97, 170.45],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        679.38, 322.34, 2, 677.36, 318.48, 2, 679.12, 317.89, 1, 664.37, 320.41,
+        2, 666.08, 318.26, 1, 649.32, 340.18, 2, 656.84, 331.88, 1, 634.64,
+        380.28, 2, 643.32, 368.19, 1, 627.6, 409.0, 2, 637.54, 394.9, 1, 625.41,
+        403.74, 2, 634.44, 397.89, 1, 646.47, 447.63, 2, 649.39, 443.67, 2,
+        629.71, 488.34, 2, 638.09, 486.05, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 3,
+      "image_id": 3,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9458.527999999997,
+      "bbox": [628.62, 319.86, 54.4, 173.87],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        683.02, 324.73, 2, 680.82, 320.82, 2, 682.75, 320.26, 1, 668.3, 322.38,
+        2, 669.45, 319.86, 1, 652.62, 342.73, 2, 659.41, 332.41, 1, 639.17,
+        383.93, 2, 645.62, 369.55, 1, 630.53, 409.61, 2, 640.22, 396.87, 1,
+        628.62, 405.84, 2, 633.94, 398.54, 1, 652.11, 450.85, 2, 647.94, 444.58,
+        2, 642.25, 493.73, 2, 636.69, 487.19, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 4,
+      "image_id": 4,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9742.874399999986,
+      "bbox": [631.82, 321.46, 54.84, 177.66],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        686.66, 327.11, 2, 684.27, 323.17, 2, 686.38, 322.64, 1, 672.24, 324.35,
+        2, 672.82, 321.46, 1, 655.93, 345.28, 2, 661.99, 332.94, 1, 643.69,
+        387.59, 2, 647.93, 370.91, 1, 633.46, 410.23, 2, 642.9, 398.84, 1,
+        631.82, 407.94, 2, 633.44, 399.2, 1, 657.75, 454.08, 2, 646.5, 445.48,
+        1, 654.79, 499.12, 2, 635.29, 488.34, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 5,
+      "image_id": 5,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9816.95,
+      "bbox": [635.3, 323.07, 55.0, 178.49],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        690.3, 329.5, 2, 687.73, 325.52, 2, 690.01, 325.01, 1, 676.17, 326.32,
+        2, 676.2, 323.07, 1, 659.24, 347.82, 2, 664.57, 333.48, 1, 648.21,
+        391.24, 2, 650.23, 372.28, 1, 641.28, 421.37, 2, 645.58, 400.81, 1,
+        637.82, 410.73, 2, 638.24, 398.99, 1, 658.62, 454.94, 2, 651.54, 446.38,
+        1, 657.15, 501.56, 2, 635.3, 488.63, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 6,
+      "image_id": 6,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10512.9108,
+      "bbox": [635.32, 324.67, 58.62, 179.34],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        693.94, 331.88, 2, 691.19, 327.86, 2, 693.65, 327.39, 1, 680.1, 328.29,
+        2, 679.57, 324.67, 1, 662.54, 350.37, 2, 667.14, 334.01, 1, 652.74,
+        394.9, 2, 652.53, 373.64, 1, 649.1, 432.51, 2, 648.26, 402.78, 1,
+        643.83, 413.52, 2, 643.04, 398.78, 1, 659.49, 455.81, 2, 656.58, 447.28,
+        1, 659.51, 504.01, 2, 635.32, 488.91, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 7,
+      "image_id": 7,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10518.610899999985,
+      "bbox": [637.09, 325.14, 59.09, 178.01],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        696.17, 332.12, 2, 693.76, 328.12, 2, 696.18, 327.61, 1, 682.21, 328.61,
+        2, 682.16, 325.14, 1, 664.63, 350.74, 2, 670.33, 335.15, 1, 655.93,
+        395.71, 2, 654.83, 375.0, 1, 656.15, 431.9, 2, 650.94, 404.75, 1,
+        644.93, 413.86, 2, 646.75, 400.2, 1, 660.37, 456.68, 2, 661.61, 448.18,
+        1, 657.85, 503.15, 2, 637.09, 489.98, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 8,
+      "image_id": 8,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10109.565600000002,
+      "bbox": [637.97, 325.6, 60.74, 166.44],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        698.4, 332.36, 2, 696.32, 328.37, 2, 698.71, 327.84, 1, 684.31, 328.92,
+        2, 684.75, 325.6, 1, 666.72, 351.1, 2, 673.52, 336.29, 1, 659.11,
+        396.52, 2, 657.14, 376.36, 1, 663.2, 431.28, 2, 653.62, 406.72, 1,
+        646.03, 414.2, 2, 650.46, 401.62, 1, 661.24, 457.55, 2, 666.65, 449.08,
+        1, 637.97, 487.71, 2, 643.8, 492.04, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 9,
+      "image_id": 9,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9813.921299999993,
+      "bbox": [643.32, 326.07, 57.93, 169.41],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        700.63, 332.6, 2, 698.89, 328.62, 2, 701.25, 328.07, 1, 686.42, 329.24,
+        2, 687.34, 326.07, 1, 668.8, 351.47, 2, 676.71, 337.43, 1, 662.3,
+        397.33, 2, 659.44, 377.72, 1, 670.25, 430.67, 2, 656.31, 408.69, 1,
+        647.13, 414.53, 2, 654.18, 403.05, 1, 662.11, 458.41, 2, 671.69, 449.98,
+        1, 643.32, 495.48, 2, 650.52, 494.09, 1
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 10,
+      "image_id": 10,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 9814.473399999992,
+      "bbox": [648.24, 326.54, 55.54, 176.71],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        702.85, 332.83, 2, 701.46, 328.88, 2, 703.78, 328.3, 1, 688.52, 329.55,
+        2, 689.93, 326.54, 1, 670.89, 351.84, 2, 679.9, 338.57, 1, 665.49,
+        398.14, 2, 661.74, 379.08, 1, 677.3, 430.06, 2, 658.99, 410.66, 1,
+        648.24, 414.87, 2, 657.89, 404.47, 1, 662.98, 459.28, 2, 676.73, 450.88,
+        1, 648.68, 503.25, 2, 651.99, 491.37, 1
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 11,
+      "image_id": 11,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10482.479999999985,
+      "bbox": [649.34, 327.01, 56.97, 184.0],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        705.08, 333.07, 2, 704.03, 329.13, 2, 706.31, 328.53, 1, 690.62, 329.87,
+        2, 692.52, 327.01, 1, 672.97, 352.21, 2, 683.09, 339.71, 1, 668.68,
+        398.95, 2, 664.04, 380.44, 1, 684.34, 429.44, 2, 661.67, 412.62, 1,
+        649.34, 415.21, 2, 661.6, 405.89, 1, 663.85, 460.15, 2, 681.77, 451.79,
+        1, 654.03, 511.01, 2, 653.46, 488.64, 1
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 12,
+      "image_id": 12,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10902.483200000004,
+      "bbox": [649.13, 327.48, 59.72, 182.56],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        707.31, 333.31, 2, 706.59, 329.39, 2, 708.85, 328.76, 1, 692.73, 330.18,
+        2, 695.11, 327.48, 1, 675.06, 352.57, 2, 686.28, 340.85, 1, 671.87,
+        399.76, 2, 666.34, 381.8, 1, 691.39, 428.83, 2, 664.35, 414.59, 1,
+        650.44, 415.55, 2, 665.31, 407.32, 1, 667.95, 461.6, 2, 686.8, 452.69,
+        1, 649.13, 510.04, 2, 665.42, 495.48, 1
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 13,
+      "image_id": 13,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12162.879499999995,
+      "bbox": [644.23, 327.95, 67.15, 181.13],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        709.54, 333.55, 2, 709.16, 329.64, 2, 711.38, 328.98, 1, 694.83, 330.5,
+        2, 697.7, 327.95, 1, 677.15, 352.94, 2, 689.47, 341.98, 1, 675.06,
+        400.57, 2, 668.65, 383.16, 1, 698.44, 428.22, 2, 667.03, 416.56, 1,
+        651.54, 415.89, 2, 669.03, 408.74, 1, 672.04, 463.05, 2, 691.84, 453.59,
+        2, 644.23, 509.08, 2, 677.37, 502.33, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 14,
+      "image_id": 14,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12704.39169999999,
+      "bbox": [644.97, 328.59, 70.07, 181.31],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        713.4, 334.59, 2, 712.8, 330.57, 2, 715.04, 330.13, 1, 698.27, 331.17,
+        2, 701.5, 328.59, 1, 680.79, 353.24, 2, 693.47, 343.89, 1, 677.58,
+        399.38, 2, 674.11, 384.48, 1, 697.0, 429.67, 2, 674.4, 419.31, 1,
+        656.06, 415.62, 2, 674.68, 410.57, 1, 674.91, 464.25, 2, 695.18, 455.25,
+        2, 644.97, 509.9, 2, 685.67, 504.42, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 15,
+      "image_id": 15,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13245.140200000003,
+      "bbox": [645.71, 329.24, 72.98, 181.49],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        717.26, 335.63, 2, 716.44, 331.49, 2, 718.69, 331.28, 1, 701.72, 331.84,
+        2, 705.31, 329.24, 1, 684.44, 353.54, 2, 697.47, 345.8, 1, 680.11,
+        398.19, 2, 679.58, 385.81, 1, 695.55, 431.12, 2, 681.77, 422.06, 1,
+        660.57, 415.35, 2, 680.34, 412.4, 1, 677.78, 465.45, 2, 698.51, 456.92,
+        2, 645.71, 510.73, 2, 693.98, 506.52, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 16,
+      "image_id": 16,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13788.752999999997,
+      "bbox": [646.45, 329.89, 75.9, 181.67],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        721.12, 336.67, 2, 720.08, 332.42, 2, 722.35, 332.43, 1, 705.16, 332.5,
+        2, 709.12, 329.89, 1, 688.08, 353.84, 2, 701.47, 347.71, 1, 682.63,
+        397.0, 2, 685.05, 387.13, 1, 694.11, 432.57, 2, 689.15, 424.81, 1,
+        665.08, 415.08, 2, 686.0, 414.23, 1, 680.66, 466.65, 2, 701.85, 458.58,
+        2, 646.45, 511.56, 2, 702.29, 508.62, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 17,
+      "image_id": 17,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14332.628799999986,
+      "bbox": [647.19, 330.54, 78.82, 181.84],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        724.98, 337.71, 2, 723.72, 333.35, 2, 726.01, 333.58, 1, 708.6, 333.17,
+        2, 712.92, 330.54, 1, 691.73, 354.14, 2, 705.47, 349.86, 1, 685.16,
+        395.8, 2, 690.51, 388.45, 1, 692.66, 434.02, 2, 696.52, 427.56, 1,
+        669.6, 414.81, 2, 691.66, 416.07, 1, 683.53, 467.85, 2, 705.19, 460.25,
+        2, 647.19, 512.38, 2, 703.51, 509.78, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 18,
+      "image_id": 18,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14878.314800000006,
+      "bbox": [647.93, 331.19, 81.74, 182.02],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        728.84, 338.75, 2, 727.36, 334.28, 2, 729.67, 334.73, 1, 712.05, 333.84,
+        2, 716.73, 331.19, 1, 695.37, 354.44, 2, 709.47, 352.02, 1, 687.68,
+        394.61, 2, 695.98, 389.77, 1, 691.22, 435.47, 2, 703.89, 430.31, 1,
+        674.11, 414.54, 2, 697.31, 417.9, 1, 686.4, 469.05, 2, 708.53, 461.91,
+        2, 647.93, 513.21, 2, 704.72, 510.93, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 19,
+      "image_id": 19,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13410.074999999999,
+      "bbox": [660.3, 332.19, 73.5, 182.45],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        732.98, 339.96, 2, 731.59, 335.35, 2, 733.8, 335.66, 1, 716.37, 334.92,
+        2, 720.79, 332.19, 1, 699.71, 355.32, 2, 712.55, 351.89, 1, 692.57,
+        396.58, 2, 697.71, 389.63, 1, 694.75, 437.24, 2, 706.35, 430.29, 1,
+        677.69, 415.56, 2, 697.87, 417.67, 1, 690.97, 469.07, 2, 709.27, 462.76,
+        2, 660.3, 514.64, 2, 703.21, 510.47, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 20,
+      "image_id": 20,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 11936.5776,
+      "bbox": [672.66, 333.19, 65.27, 182.88],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        737.11, 341.17, 2, 735.83, 336.43, 2, 737.93, 336.59, 1, 720.7, 335.99,
+        2, 724.85, 333.19, 1, 704.05, 356.21, 2, 715.62, 351.76, 1, 697.45,
+        398.56, 2, 699.44, 389.48, 1, 698.28, 439.01, 2, 708.81, 430.27, 1,
+        681.28, 416.58, 2, 698.42, 417.44, 1, 695.55, 469.08, 2, 710.01, 463.62,
+        2, 672.66, 516.07, 2, 701.69, 510.02, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 21,
+      "image_id": 21,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10487.165100000007,
+      "bbox": [684.86, 334.19, 57.21, 183.31],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        741.24, 342.37, 2, 740.07, 337.5, 2, 742.07, 337.53, 1, 725.03, 337.06,
+        2, 728.91, 334.19, 1, 708.4, 357.09, 2, 718.69, 351.64, 1, 702.33,
+        400.53, 2, 701.16, 389.33, 1, 701.81, 440.78, 2, 711.26, 430.25, 1,
+        684.86, 417.6, 2, 698.97, 417.22, 1, 700.12, 469.1, 2, 710.75, 464.47,
+        2, 685.03, 517.5, 2, 700.18, 509.56, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 22,
+      "image_id": 22,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10612.822399999995,
+      "bbox": [688.44, 335.19, 57.76, 183.74],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        745.37, 343.58, 2, 744.3, 338.58, 2, 746.2, 338.46, 1, 729.36, 338.13,
+        2, 732.97, 335.19, 1, 712.74, 357.98, 2, 721.77, 351.51, 1, 707.22,
+        402.5, 2, 702.89, 389.18, 1, 705.34, 442.55, 2, 713.72, 430.22, 1,
+        688.44, 418.62, 2, 699.53, 416.99, 1, 704.69, 469.12, 2, 711.49, 465.32,
+        2, 697.4, 518.93, 2, 698.66, 509.1, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 23,
+      "image_id": 23,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10738.952700000013,
+      "bbox": [692.02, 336.19, 58.31, 184.17],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        749.5, 344.79, 2, 748.54, 339.66, 2, 750.33, 339.39, 1, 733.68, 339.21,
+        2, 737.03, 336.19, 1, 717.08, 358.87, 2, 724.84, 351.38, 1, 712.1,
+        404.47, 2, 704.62, 389.03, 1, 708.87, 444.32, 2, 716.17, 430.2, 1,
+        692.02, 419.64, 2, 700.08, 416.76, 1, 709.26, 469.14, 2, 712.23, 466.17,
+        2, 709.77, 520.36, 2, 697.15, 508.65, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 24,
+      "image_id": 24,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 10867.401999999998,
+      "bbox": [695.6, 337.19, 58.87, 184.6],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        753.63, 345.99, 2, 752.78, 340.73, 2, 754.47, 340.33, 1, 738.01, 340.28,
+        2, 741.09, 337.19, 1, 721.42, 359.75, 2, 727.92, 351.26, 1, 716.99,
+        406.45, 2, 706.35, 388.88, 1, 712.4, 446.09, 2, 718.63, 430.18, 1,
+        695.6, 420.66, 2, 700.64, 416.53, 1, 713.83, 469.16, 2, 712.97, 467.03,
+        2, 722.14, 521.79, 2, 695.63, 508.19, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 25,
+      "image_id": 25,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 11932.584700000003,
+      "bbox": [694.11, 338.19, 64.49, 185.03],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        757.76, 347.2, 2, 757.01, 341.81, 2, 758.6, 341.26, 1, 742.34, 341.35,
+        2, 745.15, 338.19, 1, 725.76, 360.64, 2, 730.99, 351.13, 1, 721.87,
+        408.42, 2, 708.07, 388.74, 1, 715.93, 447.86, 2, 721.08, 430.16, 1,
+        699.19, 421.68, 2, 701.19, 416.31, 1, 718.4, 469.17, 2, 713.71, 467.88,
+        1, 734.51, 523.22, 2, 694.11, 507.73, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 26,
+      "image_id": 26,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12471.135900000007,
+      "bbox": [695.54, 339.19, 67.19, 185.61],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        761.89, 348.41, 2, 761.25, 342.88, 2, 762.73, 342.19, 1, 746.66, 342.43,
+        2, 749.21, 339.19, 1, 730.11, 361.52, 2, 734.07, 351.0, 1, 726.76,
+        410.39, 2, 709.8, 388.59, 1, 726.89, 449.63, 2, 723.54, 430.13, 1,
+        702.77, 422.7, 2, 701.74, 416.08, 1, 722.97, 469.19, 2, 718.01, 468.42,
+        1, 734.34, 524.8, 2, 695.54, 506.97, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 27,
+      "image_id": 27,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13017.241999999993,
+      "bbox": [696.96, 340.19, 69.91, 186.2],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        766.02, 349.61, 2, 765.49, 343.96, 2, 766.87, 343.13, 1, 750.99, 343.5,
+        2, 753.27, 340.19, 1, 734.45, 362.41, 2, 737.14, 350.88, 1, 731.64,
+        412.36, 2, 711.53, 388.44, 1, 737.85, 451.4, 2, 726.0, 430.11, 1,
+        706.35, 423.72, 2, 702.3, 415.85, 1, 727.55, 469.21, 2, 722.31, 468.96,
+        1, 734.18, 526.39, 2, 696.96, 506.2, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 28,
+      "image_id": 28,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13562.095800000005,
+      "bbox": [698.39, 341.19, 72.61, 186.78],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        770.15, 350.82, 2, 769.72, 345.04, 2, 771.0, 344.06, 1, 755.32, 344.57,
+        2, 757.33, 341.19, 1, 738.79, 363.29, 2, 740.22, 350.75, 1, 736.52,
+        414.34, 2, 713.25, 388.29, 1, 748.81, 453.17, 2, 728.45, 430.09, 1,
+        709.93, 424.74, 2, 702.85, 415.63, 1, 732.12, 469.23, 2, 726.6, 469.51,
+        1, 734.02, 527.97, 2, 698.39, 505.43, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 29,
+      "image_id": 29,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14114.582100000003,
+      "bbox": [699.81, 342.19, 75.33, 187.37],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        774.28, 352.02, 2, 773.96, 346.11, 2, 775.14, 344.99, 1, 759.64, 345.65,
+        2, 761.39, 342.19, 1, 743.13, 364.18, 2, 743.29, 350.62, 1, 741.41,
+        416.31, 2, 714.98, 388.14, 1, 759.77, 454.94, 2, 730.91, 430.06, 1,
+        713.51, 425.76, 2, 703.4, 415.4, 1, 736.69, 469.25, 2, 730.9, 470.05, 1,
+        733.85, 529.56, 2, 699.81, 504.67, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 30,
+      "image_id": 30,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12816.850799999997,
+      "bbox": [710.69, 341.79, 68.51, 187.08],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        778.45, 351.39, 2, 777.84, 345.71, 2, 779.2, 344.73, 1, 763.62, 345.04,
+        2, 765.57, 341.79, 1, 747.06, 362.93, 2, 749.81, 351.07, 1, 743.54,
+        413.46, 2, 722.21, 388.77, 1, 760.78, 451.98, 2, 737.12, 427.95, 1,
+        715.58, 424.92, 2, 711.86, 415.74, 1, 736.98, 470.64, 2, 736.55, 469.11,
+        1, 729.64, 528.87, 2, 710.69, 506.43, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 31,
+      "image_id": 31,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12255.291900000007,
+      "bbox": [717.65, 341.4, 65.61, 186.79],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        782.61, 350.76, 2, 781.71, 345.31, 2, 783.26, 344.47, 1, 767.59, 344.43,
+        2, 769.75, 341.4, 1, 750.99, 361.68, 2, 756.33, 351.52, 1, 745.68,
+        410.6, 2, 729.44, 389.4, 1, 761.8, 449.02, 2, 743.33, 425.84, 1, 717.65,
+        424.09, 2, 720.31, 416.08, 1, 737.27, 472.04, 2, 742.2, 468.16, 1,
+        725.42, 528.19, 2, 721.57, 508.2, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 32,
+      "image_id": 32,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12607.400000000005,
+      "bbox": [719.73, 341.01, 67.6, 186.5],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        786.77, 350.13, 2, 785.59, 344.9, 2, 787.33, 344.2, 1, 771.57, 343.82,
+        2, 773.93, 341.01, 1, 754.92, 360.43, 2, 762.85, 351.96, 1, 747.81,
+        407.75, 2, 736.66, 390.03, 1, 762.81, 446.06, 2, 749.54, 423.73, 1,
+        719.73, 423.25, 2, 728.77, 416.42, 1, 737.57, 473.44, 2, 747.86, 467.22,
+        2, 721.21, 527.51, 2, 732.45, 509.96, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 33,
+      "image_id": 33,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13854.023999999998,
+      "bbox": [716.99, 340.61, 74.4, 186.21],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        790.93, 349.5, 2, 789.46, 344.5, 2, 791.39, 343.94, 1, 775.54, 343.2, 2,
+        778.11, 340.61, 1, 758.85, 359.17, 2, 769.37, 352.41, 1, 749.95, 404.9,
+        2, 743.89, 390.66, 1, 763.83, 443.1, 2, 755.75, 421.61, 1, 721.8,
+        422.41, 2, 737.23, 416.77, 1, 737.86, 474.83, 2, 753.51, 466.28, 2,
+        716.99, 526.82, 2, 743.34, 511.73, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 34,
+      "image_id": 34,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15370.00640000001,
+      "bbox": [712.78, 340.22, 82.67, 185.92],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        795.1, 348.87, 2, 793.34, 344.1, 2, 795.45, 343.67, 1, 779.52, 342.59,
+        2, 782.29, 340.22, 1, 762.78, 357.92, 2, 775.88, 352.86, 1, 752.08,
+        402.04, 2, 751.12, 391.29, 1, 764.84, 440.14, 2, 761.96, 419.5, 1,
+        723.87, 421.57, 2, 745.68, 417.11, 1, 738.15, 476.23, 2, 759.16, 465.33,
+        2, 712.78, 526.14, 2, 754.22, 513.49, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 35,
+      "image_id": 35,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15753.775499999989,
+      "bbox": [712.21, 340.79, 85.95, 183.29],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        797.7, 349.57, 2, 796.06, 344.6, 2, 798.16, 344.26, 1, 782.69, 343.29,
+        2, 785.4, 340.79, 1, 765.82, 359.24, 2, 777.13, 353.35, 1, 755.15,
+        402.84, 2, 753.04, 391.43, 1, 767.13, 441.57, 2, 763.32, 420.2, 1,
+        726.84, 422.59, 2, 745.35, 417.23, 1, 742.47, 476.16, 2, 760.98, 467.59,
+        2, 712.21, 524.08, 2, 760.94, 514.84, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 36,
+      "image_id": 36,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 16116.678600000003,
+      "bbox": [711.65, 341.37, 89.21, 180.66],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        800.3, 350.27, 2, 798.79, 345.1, 2, 800.86, 344.85, 1, 785.87, 343.99,
+        2, 788.51, 341.37, 1, 768.85, 360.56, 2, 778.39, 353.84, 1, 758.22,
+        403.63, 2, 754.97, 391.58, 1, 769.41, 442.99, 2, 764.68, 420.9, 1,
+        729.81, 423.6, 2, 745.02, 417.36, 1, 746.79, 476.09, 2, 762.81, 469.86,
+        1, 711.65, 522.03, 2, 767.66, 516.18, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 37,
+      "image_id": 37,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14949.824999999999,
+      "bbox": [721.07, 341.94, 82.5, 181.21],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        802.9, 350.97, 2, 801.51, 345.6, 2, 803.57, 345.43, 1, 789.04, 344.68,
+        2, 791.62, 341.94, 1, 771.88, 361.87, 2, 779.64, 354.34, 1, 761.3,
+        404.42, 2, 756.9, 391.73, 1, 771.7, 444.41, 2, 766.04, 421.59, 1,
+        732.79, 424.61, 2, 744.68, 417.49, 1, 751.11, 476.02, 2, 763.6, 470.04,
+        1, 721.07, 523.15, 2, 764.81, 515.86, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 38,
+      "image_id": 38,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13775.590399999992,
+      "bbox": [730.49, 342.51, 75.79, 181.76],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        805.5, 351.67, 2, 804.24, 346.1, 2, 806.28, 346.02, 1, 792.22, 345.38,
+        2, 794.73, 342.51, 1, 774.91, 363.19, 2, 780.89, 354.83, 1, 764.37,
+        405.21, 2, 758.82, 391.88, 1, 773.99, 445.84, 2, 767.4, 422.29, 1,
+        735.76, 425.63, 2, 744.35, 417.61, 1, 755.43, 475.95, 2, 764.38, 470.22,
+        1, 730.49, 524.27, 2, 761.97, 515.54, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 39,
+      "image_id": 39,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12806.575,
+      "bbox": [738.73, 343.09, 70.25, 182.3],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        808.1, 352.36, 2, 806.96, 346.6, 2, 808.98, 346.61, 1, 795.39, 346.08,
+        2, 797.84, 343.09, 1, 777.95, 364.51, 2, 782.14, 355.32, 1, 767.44,
+        406.0, 2, 760.75, 392.03, 1, 776.27, 447.26, 2, 768.76, 422.99, 1,
+        738.73, 426.64, 2, 744.02, 417.74, 1, 759.74, 475.88, 2, 765.17, 470.4,
+        1, 739.92, 525.39, 2, 759.12, 515.22, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 40,
+      "image_id": 40,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 12795.843,
+      "bbox": [741.71, 343.66, 69.98, 182.85],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        810.71, 353.06, 2, 809.69, 347.1, 2, 811.69, 347.2, 1, 798.57, 346.77,
+        2, 800.95, 343.66, 1, 780.98, 365.83, 2, 783.39, 355.82, 1, 770.51,
+        406.79, 2, 762.68, 392.18, 1, 778.56, 448.68, 2, 770.12, 423.69, 1,
+        741.71, 427.66, 2, 743.69, 417.86, 1, 764.06, 475.81, 2, 765.96, 470.58,
+        1, 749.34, 526.51, 2, 756.27, 514.9, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 41,
+      "image_id": 41,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13028.735999999992,
+      "bbox": [743.35, 344.23, 71.04, 183.4],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        813.31, 353.76, 2, 812.41, 347.6, 2, 814.39, 347.78, 1, 801.74, 347.47,
+        2, 804.06, 344.23, 1, 784.01, 367.14, 2, 784.64, 356.31, 1, 773.58,
+        407.58, 2, 764.6, 392.33, 1, 780.85, 450.11, 2, 771.48, 424.39, 1,
+        744.68, 428.67, 2, 743.35, 417.99, 1, 768.38, 475.74, 2, 766.74, 470.76,
+        1, 758.76, 527.63, 2, 753.43, 514.58, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 42,
+      "image_id": 42,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 13626.275200000007,
+      "bbox": [743.02, 344.81, 74.08, 183.94],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        815.91, 354.46, 2, 815.14, 348.1, 2, 817.1, 348.37, 1, 804.92, 348.17,
+        2, 807.17, 344.81, 1, 787.04, 368.46, 2, 785.89, 356.8, 1, 776.65,
+        408.38, 2, 766.53, 392.48, 1, 783.13, 451.53, 2, 772.84, 425.09, 1,
+        747.66, 429.68, 2, 743.02, 418.12, 1, 772.7, 475.67, 2, 767.53, 470.94,
+        1, 768.18, 528.75, 2, 750.58, 514.25, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 43,
+      "image_id": 43,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14326.582399999977,
+      "bbox": [742.69, 345.38, 77.12, 185.77],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        818.51, 355.16, 2, 817.86, 348.6, 2, 819.81, 348.96, 1, 808.09, 348.86,
+        2, 810.28, 345.38, 1, 790.08, 369.78, 2, 787.14, 357.3, 1, 783.88,
+        410.99, 2, 768.46, 392.63, 1, 792.96, 451.92, 2, 774.2, 425.79, 1,
+        750.63, 430.7, 2, 742.69, 418.24, 1, 775.46, 476.38, 2, 768.32, 471.12,
+        1, 769.65, 531.15, 2, 747.73, 513.93, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 44,
+      "image_id": 44,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15036.941499999992,
+      "bbox": [742.36, 345.95, 80.15, 187.61],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        821.11, 355.85, 2, 820.59, 349.1, 2, 822.51, 349.54, 1, 811.27, 349.56,
+        2, 813.4, 345.95, 1, 793.11, 371.09, 2, 788.39, 357.79, 1, 791.11,
+        413.6, 2, 770.38, 392.77, 1, 802.78, 452.3, 2, 775.56, 426.48, 1, 753.6,
+        431.71, 2, 742.36, 418.37, 1, 778.22, 477.09, 2, 769.1, 471.3, 1,
+        771.12, 533.56, 2, 744.88, 513.61, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 45,
+      "image_id": 45,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15760.576000000014,
+      "bbox": [742.02, 346.53, 83.2, 189.43],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        823.71, 356.55, 2, 823.31, 349.6, 2, 825.22, 350.13, 1, 814.44, 350.26,
+        2, 816.51, 346.53, 1, 796.14, 372.41, 2, 789.64, 358.28, 1, 798.34,
+        416.21, 2, 772.31, 392.92, 1, 812.61, 452.68, 2, 776.92, 427.18, 1,
+        756.58, 432.73, 2, 742.02, 418.49, 1, 780.97, 477.8, 2, 769.89, 471.48,
+        1, 772.59, 535.96, 2, 742.04, 513.29, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 46,
+      "image_id": 46,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15374.45150000001,
+      "bbox": [744.51, 346.97, 82.45, 186.47],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        825.45, 357.18, 2, 824.8, 350.16, 2, 826.96, 350.77, 1, 814.84, 350.53,
+        2, 817.56, 346.97, 1, 798.51, 371.02, 2, 795.32, 357.33, 1, 802.13,
+        416.99, 2, 775.96, 396.09, 1, 816.26, 451.29, 2, 778.36, 431.39, 1,
+        756.46, 431.93, 2, 749.88, 419.93, 1, 780.1, 477.83, 2, 774.12, 470.71,
+        1, 767.66, 533.44, 2, 744.51, 512.47, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 47,
+      "image_id": 47,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14992.767000000007,
+      "bbox": [746.99, 347.4, 81.7, 183.51],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        827.19, 357.8, 2, 826.29, 350.73, 2, 828.69, 351.42, 1, 815.25, 350.81,
+        2, 818.61, 347.4, 1, 800.89, 369.63, 2, 801.0, 356.39, 1, 805.91,
+        417.77, 2, 779.61, 399.26, 1, 819.91, 449.9, 2, 779.81, 435.59, 1,
+        756.34, 431.13, 2, 757.73, 421.38, 1, 779.23, 477.86, 2, 778.34, 469.94,
+        1, 762.74, 530.91, 2, 746.99, 511.65, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 48,
+      "image_id": 48,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14619.133499999985,
+      "bbox": [749.46, 347.84, 80.97, 180.55],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": false },
+      "keypoints": [
+        828.93, 358.43, 2, 827.79, 351.29, 2, 830.43, 352.06, 1, 815.65, 351.09,
+        2, 819.67, 347.84, 1, 803.26, 368.23, 2, 806.69, 355.44, 1, 809.69,
+        418.55, 2, 783.26, 402.43, 1, 823.56, 448.5, 2, 781.25, 439.8, 1,
+        756.23, 430.34, 2, 765.58, 422.82, 1, 778.35, 477.89, 2, 782.57, 469.17,
+        1, 757.82, 528.39, 2, 749.46, 510.83, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 49,
+      "image_id": 49,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 14247.243399999987,
+      "bbox": [751.94, 348.28, 80.23, 177.58],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        830.67, 359.06, 2, 829.28, 351.85, 2, 832.17, 352.7, 1, 816.06, 351.36,
+        2, 820.72, 348.28, 1, 805.63, 366.84, 2, 812.37, 354.49, 1, 813.48,
+        419.33, 2, 786.91, 405.6, 1, 827.21, 447.11, 2, 782.7, 444.0, 1, 756.11,
+        429.54, 2, 773.43, 424.26, 1, 777.48, 477.92, 2, 786.8, 468.4, 1, 752.9,
+        525.86, 2, 751.94, 510.0, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 50,
+      "image_id": 50,
+      "category_id": 55,
+      "segmentation": [],
+      "area": 15101.137600000004,
+      "bbox": [747.97, 348.72, 86.48, 174.62],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 0, "keyframe": true },
+      "keypoints": [
+        832.41, 359.68, 2, 830.77, 352.41, 2, 833.91, 353.35, 1, 816.46, 351.64,
+        2, 821.78, 348.72, 1, 803.77, 366.5, 2, 813.82, 358.31, 1, 817.26,
+        420.11, 2, 817.03, 416.18, 1, 830.86, 445.71, 2, 834.45, 448.21, 1,
+        755.99, 428.74, 2, 781.28, 425.7, 1, 776.61, 477.95, 2, 789.97, 468.16,
+        1, 747.97, 523.34, 2, 761.3, 520.83, 1
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 51,
+      "image_id": 51,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 16587.287999999997,
+      "bbox": [741.78, 350.37, 93.65, 177.12],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        834.9, 359.63, 2, 832.85, 354.02, 2, 835.43, 354.02, 1, 819.53, 353.28,
+        2, 821.64, 350.37, 1, 809.89, 370.77, 2, 811.34, 357.27, 1, 820.2,
+        422.72, 2, 791.74, 402.13, 2, 831.77, 452.81, 2, 789.15, 437.47, 2,
+        760.46, 434.41, 2, 778.08, 424.39, 1, 777.12, 485.04, 2, 794.93, 468.61,
+        2, 741.78, 527.49, 2, 775.84, 519.83, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 52,
+      "image_id": 52,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 16334.718400000002,
+      "bbox": [743.8, 356.68, 95.48, 171.08],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        838.37, 365.85, 2, 836.6, 360.4, 2, 838.86, 360.26, 1, 824.05, 359.68,
+        2, 825.41, 356.68, 1, 815.06, 376.97, 2, 814.55, 364.46, 1, 826.35,
+        428.23, 2, 798.62, 410.59, 2, 839.28, 457.44, 2, 803.71, 443.55, 2,
+        762.91, 437.24, 2, 776.5, 428.37, 1, 779.19, 488.53, 2, 792.69, 472.26,
+        2, 743.8, 527.76, 2, 772.52, 519.01, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 53,
+      "image_id": 53,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 16666.379699999998,
+      "bbox": [745.81, 363.0, 100.99, 165.03],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        841.85, 372.07, 2, 840.34, 366.78, 2, 842.28, 366.5, 1, 828.57, 366.08,
+        2, 829.17, 363.0, 1, 820.23, 383.18, 2, 817.76, 371.65, 1, 832.5,
+        433.73, 2, 805.51, 419.05, 2, 846.8, 462.07, 2, 818.27, 449.64, 2,
+        765.36, 440.08, 2, 774.93, 432.34, 1, 781.26, 492.01, 2, 790.46, 475.91,
+        2, 745.81, 528.03, 2, 769.19, 518.19, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 54,
+      "image_id": 54,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 16928.19039999998,
+      "bbox": [747.83, 369.32, 106.48, 158.98],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        845.32, 378.29, 2, 844.09, 373.15, 2, 845.71, 372.75, 1, 833.08, 372.48,
+        2, 832.93, 369.32, 1, 825.41, 389.39, 2, 820.98, 378.84, 1, 838.66,
+        439.23, 2, 812.39, 427.51, 2, 854.31, 466.7, 2, 832.83, 455.73, 2,
+        767.81, 442.91, 2, 773.35, 436.32, 1, 783.33, 495.5, 2, 788.23, 479.56,
+        2, 747.83, 528.3, 2, 765.87, 517.38, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 55,
+      "image_id": 55,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 17127.750600000007,
+      "bbox": [749.84, 375.64, 111.99, 152.94],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        848.79, 384.51, 2, 847.83, 379.53, 2, 849.14, 378.99, 1, 837.6, 378.88,
+        2, 836.69, 375.64, 1, 830.58, 395.6, 2, 824.19, 386.03, 1, 844.81,
+        444.73, 2, 819.73, 434.14, 2, 861.83, 471.33, 2, 842.38, 461.59, 2,
+        770.26, 445.74, 2, 771.77, 440.3, 1, 785.4, 498.98, 2, 786.0, 483.21, 2,
+        749.84, 528.58, 2, 762.55, 516.56, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 56,
+      "image_id": 56,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 17257.812000000005,
+      "bbox": [751.86, 381.95, 117.48, 146.9],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        852.26, 390.73, 2, 851.58, 385.91, 2, 852.57, 385.23, 1, 842.12, 385.29,
+        2, 840.46, 381.95, 1, 835.75, 401.81, 2, 827.4, 393.22, 1, 850.97,
+        450.23, 2, 827.07, 440.78, 2, 869.34, 475.96, 2, 851.93, 467.45, 2,
+        772.71, 448.57, 2, 770.19, 444.27, 1, 787.47, 502.47, 2, 783.76, 486.86,
+        2, 751.86, 528.85, 2, 759.23, 515.74, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 57,
+      "image_id": 57,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 17323.141500000005,
+      "bbox": [753.87, 388.27, 122.99, 140.85],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        855.74, 396.95, 2, 855.32, 392.29, 2, 855.99, 391.47, 1, 846.64, 391.69,
+        2, 844.22, 388.27, 1, 840.93, 408.02, 2, 830.62, 400.41, 1, 857.12,
+        455.73, 2, 834.41, 447.41, 2, 876.86, 480.58, 2, 861.47, 473.31, 2,
+        775.16, 451.4, 2, 768.61, 448.25, 1, 789.54, 505.95, 2, 781.53, 490.51,
+        2, 753.87, 529.12, 2, 755.9, 514.92, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 58,
+      "image_id": 58,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 17765.291999999998,
+      "bbox": [752.58, 394.59, 131.79, 134.8],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        859.21, 403.17, 2, 859.07, 398.67, 2, 859.42, 397.71, 1, 851.15, 398.09,
+        2, 847.98, 394.59, 1, 846.1, 414.23, 2, 833.83, 407.59, 1, 863.27,
+        461.23, 2, 841.75, 454.05, 2, 884.37, 485.21, 2, 871.02, 479.17, 2,
+        777.61, 454.24, 2, 767.03, 452.22, 1, 791.61, 509.44, 2, 779.3, 494.15,
+        2, 755.89, 529.39, 2, 752.58, 514.11, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 59,
+      "image_id": 59,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 18365.0388,
+      "bbox": [749.26, 400.9, 142.63, 128.76],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        862.68, 409.38, 2, 862.82, 405.05, 2, 862.85, 403.96, 1, 855.67, 404.49,
+        2, 851.74, 400.9, 1, 851.28, 420.43, 2, 837.04, 414.78, 1, 869.43,
+        466.73, 2, 849.09, 460.68, 2, 891.89, 489.84, 2, 880.57, 485.03, 2,
+        780.06, 457.07, 2, 765.45, 456.2, 1, 793.68, 512.92, 2, 777.06, 497.8,
+        2, 757.9, 529.66, 2, 749.26, 513.29, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 60,
+      "image_id": 60,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 18833.838399999993,
+      "bbox": [745.94, 407.22, 153.47, 122.72],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        866.16, 415.6, 2, 866.56, 411.42, 2, 866.28, 410.2, 1, 860.19, 410.89,
+        2, 855.5, 407.22, 1, 856.45, 426.64, 2, 840.26, 421.97, 1, 875.58,
+        472.23, 2, 856.44, 467.32, 2, 899.41, 494.47, 2, 890.12, 490.89, 2,
+        782.51, 459.9, 2, 763.87, 460.17, 1, 795.75, 516.41, 2, 774.83, 501.45,
+        2, 759.92, 529.94, 2, 745.94, 512.47, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 61,
+      "image_id": 61,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 17709.313600000005,
+      "bbox": [746.7, 420.43, 153.62, 115.28],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        873.99, 428.82, 2, 874.46, 425.04, 2, 874.72, 423.89, 1, 867.88, 423.56,
+        2, 863.81, 420.43, 1, 863.74, 440.01, 2, 846.94, 434.73, 1, 880.59,
+        484.38, 2, 857.8, 476.28, 2, 900.32, 509.36, 2, 884.65, 502.43, 2,
+        786.61, 469.32, 2, 770.86, 466.7, 1, 797.11, 523.4, 2, 779.39, 508.14,
+        2, 757.79, 535.71, 2, 746.7, 516.73, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 62,
+      "image_id": 62,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 16582.556800000002,
+      "bbox": [747.46, 433.64, 153.77, 107.84],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        881.82, 442.03, 2, 882.36, 438.66, 2, 883.17, 437.57, 1, 875.58, 436.22,
+        2, 872.12, 433.64, 1, 871.03, 453.38, 2, 853.62, 447.49, 1, 885.61,
+        496.53, 2, 859.17, 485.24, 2, 901.23, 524.24, 2, 879.18, 513.98, 2,
+        790.71, 478.73, 2, 777.84, 473.24, 1, 798.48, 530.38, 2, 783.95, 514.82,
+        2, 755.67, 541.48, 2, 747.46, 520.98, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 63,
+      "image_id": 63,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 15453.567999999992,
+      "bbox": [748.22, 446.85, 153.92, 100.4],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        889.65, 455.24, 2, 890.26, 452.28, 2, 891.61, 451.26, 1, 883.27, 448.89,
+        2, 880.43, 446.85, 1, 878.32, 466.74, 2, 860.31, 460.25, 1, 890.62,
+        508.68, 2, 860.54, 494.21, 2, 902.14, 539.13, 2, 873.71, 525.52, 2,
+        794.81, 488.15, 2, 784.83, 479.77, 1, 799.85, 537.37, 2, 788.5, 521.5,
+        2, 753.54, 547.25, 2, 748.22, 525.23, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 64,
+      "image_id": 64,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13361.1072,
+      "bbox": [749.9, 457.4, 149.52, 89.36],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        893.22, 465.45, 2, 894.34, 463.08, 2, 895.27, 461.56, 1, 888.23, 460.99,
+        2, 884.97, 457.4, 1, 882.45, 475.74, 2, 865.17, 467.41, 1, 892.97,
+        514.44, 2, 862.24, 495.16, 2, 899.42, 540.38, 2, 873.24, 524.37, 2,
+        801.82, 492.86, 2, 792.83, 481.96, 1, 799.1, 537.39, 2, 788.01, 521.1,
+        2, 756.2, 546.76, 2, 749.9, 525.09, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 65,
+      "image_id": 65,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 11539.668799999992,
+      "bbox": [751.58, 467.95, 147.34, 78.32],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        896.79, 475.66, 2, 898.41, 473.88, 2, 898.92, 471.85, 1, 893.19, 473.1,
+        2, 889.51, 467.95, 1, 886.59, 484.73, 2, 870.04, 474.58, 1, 895.33,
+        520.19, 2, 863.95, 496.12, 2, 896.7, 541.64, 2, 872.77, 523.22, 2,
+        808.83, 497.57, 2, 800.84, 484.16, 1, 798.34, 537.41, 2, 787.51, 520.7,
+        2, 758.86, 546.27, 2, 751.58, 524.95, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 66,
+      "image_id": 66,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 10046.2496,
+      "bbox": [753.26, 478.5, 149.32, 67.28],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        900.37, 485.87, 2, 902.49, 484.69, 2, 902.58, 482.15, 1, 898.15, 485.2,
+        2, 894.04, 478.5, 1, 890.72, 493.73, 2, 874.9, 481.75, 1, 897.68,
+        525.94, 2, 865.66, 497.08, 2, 893.98, 542.89, 2, 872.29, 522.07, 2,
+        815.84, 502.27, 2, 808.84, 486.36, 1, 797.59, 537.42, 2, 787.02, 520.3,
+        2, 761.52, 545.78, 2, 753.26, 524.81, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 67,
+      "image_id": 67,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 8602.918799999987,
+      "bbox": [754.94, 488.55, 151.62, 56.74],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        903.94, 496.09, 2, 906.56, 495.49, 2, 906.23, 492.45, 1, 903.11, 497.3,
+        2, 898.58, 489.05, 1, 894.85, 502.73, 2, 879.76, 488.91, 1, 900.03,
+        531.7, 2, 867.37, 498.04, 2, 891.26, 544.15, 2, 871.82, 520.92, 2,
+        822.85, 506.98, 2, 816.84, 488.55, 1, 796.83, 537.44, 2, 786.53, 519.9,
+        2, 764.18, 545.29, 2, 754.94, 524.67, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 68,
+      "image_id": 68,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 8417.192999999996,
+      "bbox": [756.62, 490.75, 154.02, 54.65],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        907.51, 506.3, 2, 910.64, 506.29, 2, 909.89, 502.74, 1, 908.07, 509.41,
+        2, 903.12, 499.6, 1, 898.98, 511.72, 2, 884.63, 496.08, 1, 902.39,
+        537.45, 2, 869.08, 499.0, 2, 888.54, 545.4, 2, 871.34, 519.78, 2,
+        829.86, 511.69, 2, 824.84, 490.75, 1, 796.08, 537.46, 2, 786.03, 519.5,
+        2, 766.84, 544.8, 2, 756.62, 524.53, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 69,
+      "image_id": 69,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 8401.318200000002,
+      "bbox": [758.3, 492.95, 156.42, 53.71],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        911.08, 516.51, 2, 914.72, 517.09, 2, 913.55, 513.04, 1, 913.03, 521.51,
+        2, 907.66, 510.15, 1, 903.11, 520.72, 2, 889.49, 503.24, 1, 904.74,
+        543.2, 2, 870.79, 499.96, 1, 885.82, 546.66, 2, 870.87, 518.63, 2,
+        836.87, 516.4, 2, 832.84, 492.95, 1, 795.33, 537.48, 2, 785.54, 519.1,
+        2, 769.5, 544.31, 2, 758.3, 524.39, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 70,
+      "image_id": 70,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 8547.154200000004,
+      "bbox": [759.98, 495.14, 158.81, 53.82],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        914.65, 526.72, 2, 918.79, 527.89, 2, 917.2, 523.34, 1, 917.98, 533.61,
+        2, 912.2, 520.69, 1, 907.24, 529.72, 2, 894.36, 510.41, 1, 907.09,
+        548.96, 2, 872.5, 500.91, 1, 883.1, 547.92, 2, 870.39, 517.48, 1,
+        843.88, 521.1, 2, 840.85, 495.14, 2, 794.57, 537.49, 2, 785.04, 518.7,
+        2, 772.16, 543.82, 2, 759.98, 524.25, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 71,
+      "image_id": 71,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 9364.585999999987,
+      "bbox": [756.46, 492.12, 160.6, 58.31],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        911.91, 516.79, 1, 917.06, 518.65, 1, 914.66, 512.03, 1, 914.92, 524.77,
+        1, 907.3, 503.98, 1, 908.29, 536.9, 2, 889.14, 498.29, 2, 884.55,
+        550.43, 2, 841.06, 492.12, 1, 882.67, 529.88, 2, 849.17, 517.4, 2,
+        849.19, 544.58, 2, 844.48, 512.91, 2, 792.36, 536.58, 2, 782.83, 517.79,
+        2, 770.36, 545.6, 2, 756.46, 526.03, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 72,
+      "image_id": 72,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 9529.339000000002,
+      "bbox": [753.24, 490.58, 162.7, 58.57],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        910.7, 514.48, 1, 915.94, 516.73, 1, 913.64, 509.88, 1, 912.77, 523.24,
+        1, 905.69, 501.62, 1, 904.45, 536.15, 2, 886.36, 495.32, 2, 880.92,
+        549.15, 2, 838.99, 490.58, 1, 877.66, 527.41, 2, 847.78, 517.7, 2,
+        846.26, 545.47, 2, 841.4, 512.99, 2, 790.45, 536.27, 2, 780.92, 517.48,
+        2, 768.86, 547.99, 2, 753.24, 528.42, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 73,
+      "image_id": 73,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 10109.866500000002,
+      "bbox": [750.02, 489.03, 164.79, 61.35],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        909.48, 512.17, 1, 914.81, 514.81, 1, 912.62, 507.73, 1, 910.61, 521.72,
+        1, 904.08, 499.25, 1, 900.62, 535.4, 2, 883.58, 492.35, 2, 877.3,
+        547.88, 2, 836.92, 489.03, 2, 872.65, 524.94, 2, 846.38, 518.01, 1,
+        843.34, 546.36, 2, 838.32, 513.06, 2, 788.54, 535.96, 2, 779.01, 517.17,
+        2, 767.36, 550.38, 2, 750.02, 530.81, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 74,
+      "image_id": 74,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 10930.640000000007,
+      "bbox": [746.81, 487.27, 166.88, 65.5],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        908.26, 509.86, 1, 913.69, 512.89, 1, 911.59, 505.58, 1, 908.46, 520.19,
+        1, 902.47, 496.89, 1, 896.78, 534.65, 2, 880.8, 489.39, 2, 873.67,
+        546.61, 2, 834.89, 487.27, 2, 867.64, 522.47, 2, 842.79, 517.5, 1,
+        840.41, 547.26, 2, 835.24, 513.13, 2, 786.63, 535.66, 2, 777.1, 516.87,
+        2, 765.85, 552.77, 2, 746.81, 533.2, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 75,
+      "image_id": 75,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 11767.070799999992,
+      "bbox": [743.59, 485.52, 168.97, 69.64],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        907.05, 507.56, 1, 912.56, 510.98, 1, 910.57, 503.42, 1, 906.31, 518.66,
+        1, 900.87, 494.52, 1, 892.95, 533.9, 2, 878.02, 486.42, 2, 870.04,
+        545.33, 2, 832.86, 485.52, 2, 862.63, 520.0, 2, 839.19, 517.0, 1,
+        837.49, 548.15, 2, 832.16, 513.21, 2, 784.72, 535.35, 2, 775.19, 516.56,
+        2, 764.35, 555.16, 2, 743.59, 535.59, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 76,
+      "image_id": 76,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12674.576299999999,
+      "bbox": [740.37, 483.45, 171.07, 74.09],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        905.83, 505.25, 1, 911.44, 509.06, 1, 909.55, 501.27, 1, 904.16, 517.14,
+        1, 899.26, 492.16, 1, 889.11, 533.15, 2, 875.24, 483.45, 2, 866.41,
+        544.06, 2, 830.84, 483.76, 2, 857.61, 517.53, 1, 835.59, 516.5, 1,
+        834.56, 549.04, 2, 829.08, 513.28, 2, 782.81, 535.04, 2, 773.28, 516.25,
+        2, 762.85, 557.54, 2, 740.37, 537.98, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 77,
+      "image_id": 77,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12723.557199999992,
+      "bbox": [734.39, 481.14, 170.42, 74.66],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        899.3, 502.71, 1, 904.81, 506.3, 1, 902.89, 498.58, 1, 897.86, 514.4, 1,
+        892.68, 489.75, 1, 883.4, 530.07, 2, 869.19, 481.14, 2, 860.47, 541.99,
+        2, 825.9, 484.54, 2, 851.49, 515.85, 1, 830.09, 514.86, 1, 828.3,
+        547.43, 2, 822.89, 511.69, 2, 779.12, 536.23, 2, 769.09, 516.49, 2,
+        756.31, 555.8, 2, 734.39, 536.88, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 78,
+      "image_id": 78,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12770.292499999994,
+      "bbox": [728.42, 478.83, 169.75, 75.23],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        892.78, 500.18, 1, 898.17, 503.54, 1, 896.23, 495.9, 1, 891.57, 511.66,
+        1, 886.1, 487.34, 1, 877.68, 527.0, 2, 863.15, 478.83, 2, 854.53,
+        539.92, 2, 820.96, 485.33, 2, 845.36, 514.18, 1, 824.59, 513.22, 1,
+        822.04, 545.81, 2, 816.69, 510.1, 2, 775.43, 537.41, 2, 764.91, 516.73,
+        2, 749.77, 554.06, 2, 728.42, 535.79, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 79,
+      "image_id": 79,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12841.455900000008,
+      "bbox": [722.15, 476.51, 169.39, 75.81],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        886.25, 497.65, 1, 891.54, 500.78, 1, 889.57, 493.21, 1, 885.28, 508.93,
+        1, 879.53, 484.93, 1, 871.97, 523.92, 2, 857.1, 476.51, 2, 848.59,
+        537.85, 2, 815.16, 484.09, 2, 839.23, 512.5, 1, 819.09, 511.58, 1,
+        815.77, 544.19, 2, 810.5, 508.51, 2, 768.85, 535.71, 2, 758.41, 515.38,
+        2, 743.23, 552.32, 2, 722.15, 534.26, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 80,
+      "image_id": 80,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12909.747600000008,
+      "bbox": [715.88, 474.2, 169.02, 76.38],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        879.72, 495.11, 1, 884.9, 498.02, 1, 882.9, 490.52, 1, 878.98, 506.19,
+        1, 872.95, 482.52, 1, 866.26, 520.85, 2, 851.05, 474.2, 2, 842.66,
+        535.78, 2, 809.35, 482.85, 2, 833.1, 510.83, 1, 813.59, 509.95, 1,
+        809.51, 542.57, 2, 804.3, 506.93, 2, 762.27, 534.01, 2, 751.91, 514.03,
+        2, 736.68, 550.58, 2, 715.88, 532.73, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 81,
+      "image_id": 81,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12976.700400000007,
+      "bbox": [709.61, 471.89, 168.66, 76.94],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        873.2, 492.58, 1, 878.27, 495.26, 1, 876.24, 487.83, 1, 872.69, 503.45,
+        1, 866.38, 480.11, 1, 860.54, 517.77, 2, 845.01, 471.89, 2, 836.72,
+        533.72, 2, 803.55, 481.61, 2, 826.97, 509.15, 1, 808.09, 508.31, 1,
+        803.25, 540.96, 2, 798.1, 505.34, 2, 755.69, 532.3, 2, 745.41, 512.68,
+        2, 730.14, 548.83, 2, 709.61, 531.21, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 82,
+      "image_id": 82,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13044.157900000006,
+      "bbox": [703.35, 469.58, 168.29, 77.51],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        866.67, 490.04, 1, 871.64, 492.5, 1, 869.58, 485.14, 1, 866.4, 500.71,
+        1, 859.8, 477.71, 1, 854.83, 514.7, 2, 838.96, 469.58, 2, 830.78,
+        531.65, 2, 797.74, 480.38, 2, 820.84, 507.48, 1, 802.59, 506.67, 1,
+        796.98, 539.34, 2, 791.91, 503.75, 2, 749.11, 530.6, 2, 738.92, 511.33,
+        2, 723.6, 547.09, 2, 703.35, 529.68, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 83,
+      "image_id": 83,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13112.872800000003,
+      "bbox": [697.08, 467.26, 167.92, 78.09],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        860.14, 487.51, 1, 865.0, 489.74, 1, 862.92, 482.46, 1, 860.1, 497.97,
+        1, 853.23, 475.3, 1, 849.12, 511.62, 2, 832.91, 467.26, 2, 824.84,
+        529.58, 2, 791.94, 479.14, 2, 814.71, 505.8, 1, 797.09, 505.03, 1,
+        790.72, 537.72, 2, 785.71, 502.16, 2, 742.53, 528.9, 2, 732.42, 509.98,
+        2, 717.06, 545.35, 2, 697.08, 528.15, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 84,
+      "image_id": 84,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13180.269600000009,
+      "bbox": [690.81, 464.95, 167.56, 78.66],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        853.62, 484.97, 1, 858.37, 486.98, 1, 856.26, 479.77, 1, 853.81, 495.24,
+        1, 846.65, 472.89, 1, 843.41, 508.55, 2, 826.87, 464.95, 2, 818.9,
+        527.51, 2, 786.13, 477.9, 2, 808.59, 504.13, 1, 791.59, 503.39, 1,
+        784.46, 536.11, 2, 779.52, 500.57, 2, 735.95, 527.19, 2, 725.92, 508.63,
+        2, 710.52, 543.61, 2, 690.81, 526.62, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 85,
+      "image_id": 85,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13246.463700000008,
+      "bbox": [684.54, 462.64, 167.19, 79.23],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        847.09, 482.44, 1, 851.73, 484.22, 1, 849.59, 477.08, 1, 847.52, 492.5,
+        1, 840.07, 470.48, 1, 837.69, 505.47, 2, 820.82, 462.64, 2, 812.96,
+        525.44, 2, 780.33, 476.66, 2, 802.46, 502.45, 1, 786.09, 501.76, 1,
+        778.19, 534.49, 2, 773.32, 498.98, 2, 729.37, 525.49, 2, 719.42, 507.28,
+        2, 703.97, 541.87, 2, 684.54, 525.1, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 86,
+      "image_id": 86,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13310.567800000008,
+      "bbox": [678.28, 460.33, 166.82, 79.79],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        840.56, 479.9, 1, 845.1, 481.47, 1, 842.93, 474.39, 1, 841.22, 489.76,
+        1, 833.5, 468.07, 1, 831.98, 502.4, 2, 814.77, 460.33, 2, 807.02,
+        523.38, 2, 774.52, 475.42, 2, 796.33, 500.78, 1, 780.59, 500.12, 1,
+        771.93, 532.87, 2, 767.12, 497.4, 2, 722.79, 523.79, 2, 712.92, 505.93,
+        2, 697.43, 540.12, 2, 678.28, 523.57, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 87,
+      "image_id": 87,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13378.390200000003,
+      "bbox": [672.01, 458.01, 166.46, 80.37],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        834.04, 477.37, 1, 838.47, 478.71, 1, 836.27, 471.7, 1, 834.93, 487.02,
+        1, 826.92, 465.66, 1, 826.27, 499.32, 2, 808.73, 458.01, 2, 801.08,
+        521.31, 2, 768.72, 474.18, 2, 790.2, 499.1, 1, 775.09, 498.48, 1,
+        765.67, 531.26, 2, 760.93, 495.81, 2, 716.21, 522.08, 2, 706.43, 504.58,
+        2, 690.89, 538.38, 2, 672.01, 522.04, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 88,
+      "image_id": 88,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13288.012499999988,
+      "bbox": [668.27, 456.1, 167.25, 79.45],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        830.93, 476.01, 1, 835.52, 477.68, 1, 833.41, 470.52, 1, 831.39, 485.79,
+        1, 824.09, 464.04, 1, 822.04, 498.36, 2, 805.27, 456.1, 2, 797.34,
+        519.2, 2, 765.49, 471.95, 2, 786.55, 496.34, 1, 772.06, 495.75, 1,
+        761.88, 528.55, 2, 757.21, 493.13, 2, 712.63, 519.81, 2, 702.83, 502.43,
+        2, 686.82, 535.55, 2, 668.27, 519.5, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 89,
+      "image_id": 89,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13196.96650000001,
+      "bbox": [664.53, 454.19, 168.05, 78.53],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        827.81, 474.65, 1, 832.58, 476.65, 1, 830.55, 469.34, 1, 827.84, 484.56,
+        1, 821.26, 462.42, 1, 817.8, 497.41, 2, 801.81, 454.19, 2, 793.6,
+        517.09, 2, 762.26, 469.71, 2, 782.89, 493.58, 1, 769.04, 493.03, 1,
+        758.09, 525.84, 2, 753.49, 490.45, 2, 709.05, 517.55, 2, 699.22, 500.28,
+        2, 682.76, 532.72, 2, 664.53, 516.96, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 90,
+      "image_id": 90,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13104.448500000004,
+      "bbox": [660.79, 452.28, 168.85, 77.61],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        824.7, 473.3, 1, 829.64, 475.62, 1, 827.69, 468.16, 1, 824.3, 483.33, 1,
+        818.44, 460.8, 1, 813.57, 496.45, 2, 798.35, 452.28, 2, 789.86, 514.98,
+        2, 759.03, 467.48, 2, 779.24, 490.81, 1, 766.01, 490.3, 1, 754.31,
+        523.14, 2, 749.77, 487.78, 2, 705.47, 515.28, 2, 695.62, 498.13, 2,
+        678.69, 529.89, 2, 660.79, 514.43, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 91,
+      "image_id": 91,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13009.691599999998,
+      "bbox": [657.05, 450.37, 169.64, 76.69],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        821.59, 471.94, 1, 826.69, 474.58, 1, 824.83, 466.98, 1, 820.76, 482.1,
+        1, 815.61, 459.18, 1, 809.34, 495.49, 2, 794.89, 450.37, 2, 786.12,
+        512.88, 2, 755.81, 465.24, 2, 775.59, 488.05, 1, 762.99, 487.57, 1,
+        750.52, 520.43, 2, 746.05, 485.1, 2, 701.89, 513.01, 2, 692.02, 495.98,
+        2, 674.63, 527.06, 2, 657.05, 511.89, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 92,
+      "image_id": 92,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12914.23880000001,
+      "bbox": [653.31, 448.46, 170.44, 75.77],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        818.48, 470.58, 1, 823.75, 473.55, 1, 821.97, 465.8, 1, 817.22, 480.87,
+        1, 812.78, 457.56, 1, 805.11, 494.53, 2, 791.43, 448.46, 2, 782.38,
+        510.77, 2, 752.58, 463.0, 2, 771.94, 485.28, 1, 759.96, 484.85, 1,
+        746.73, 517.72, 2, 742.33, 482.42, 2, 698.31, 510.74, 2, 688.42, 493.83,
+        2, 670.56, 524.23, 2, 653.31, 509.35, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 93,
+      "image_id": 93,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12815.601599999987,
+      "bbox": [649.57, 446.55, 171.24, 74.84],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        815.37, 469.22, 1, 820.81, 472.52, 1, 819.11, 464.62, 1, 813.68, 479.64,
+        1, 809.95, 455.94, 1, 800.88, 493.57, 2, 787.97, 446.55, 2, 778.64,
+        508.66, 2, 749.35, 460.77, 2, 768.28, 482.52, 1, 756.94, 482.12, 1,
+        742.95, 515.02, 2, 738.61, 479.74, 2, 694.73, 508.48, 2, 684.82, 491.68,
+        2, 666.5, 521.39, 2, 649.57, 506.81, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 94,
+      "image_id": 94,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12717.19679999999,
+      "bbox": [645.83, 444.64, 172.04, 73.92],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        812.26, 467.86, 1, 817.87, 471.49, 1, 816.25, 463.44, 1, 810.14, 478.41,
+        1, 807.12, 454.32, 1, 796.64, 492.61, 2, 784.51, 444.64, 2, 774.9,
+        506.55, 2, 746.13, 458.53, 2, 764.63, 479.76, 1, 753.91, 479.39, 1,
+        739.16, 512.31, 2, 734.89, 477.07, 2, 691.15, 506.21, 2, 681.22, 489.52,
+        2, 662.43, 518.56, 2, 645.83, 504.27, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 95,
+      "image_id": 95,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12664.118400000001,
+      "bbox": [641.64, 442.42, 171.88, 73.68],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        808.17, 465.84, 1, 813.52, 469.21, 1, 811.8, 461.22, 1, 806.74, 476.03,
+        1, 803.05, 452.19, 1, 793.87, 488.96, 2, 781.98, 442.42, 2, 770.83,
+        504.2, 2, 743.14, 455.67, 2, 762.46, 478.25, 1, 751.75, 476.47, 1,
+        735.99, 510.04, 2, 732.06, 475.85, 2, 685.94, 503.86, 2, 677.24, 486.33,
+        2, 658.37, 516.1, 2, 641.64, 501.93, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 96,
+      "image_id": 96,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12613.56849999999,
+      "bbox": [637.44, 440.19, 171.73, 73.45],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        804.09, 463.83, 1, 809.17, 466.93, 1, 807.35, 459.0, 1, 803.35, 473.64,
+        1, 798.99, 450.05, 1, 791.09, 485.32, 2, 779.46, 440.19, 2, 766.76,
+        501.84, 2, 740.16, 452.81, 2, 760.29, 476.75, 1, 749.59, 473.55, 1,
+        732.82, 507.77, 2, 729.23, 474.63, 2, 680.73, 501.5, 2, 673.27, 483.13,
+        2, 654.3, 513.64, 2, 637.44, 499.58, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 97,
+      "image_id": 97,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12558.191999999994,
+      "bbox": [633.25, 437.97, 171.56, 73.2],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        800.0, 461.81, 1, 804.81, 464.66, 1, 802.9, 456.78, 1, 799.95, 471.26,
+        1, 794.93, 447.92, 1, 788.32, 481.67, 2, 776.93, 437.97, 2, 762.69,
+        499.48, 2, 737.17, 449.95, 2, 758.12, 475.24, 1, 747.43, 470.63, 1,
+        729.65, 505.5, 2, 726.4, 473.42, 2, 675.52, 499.15, 2, 669.3, 479.93, 2,
+        650.24, 511.17, 2, 633.25, 497.24, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 98,
+      "image_id": 98,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12507.7877,
+      "bbox": [629.05, 435.74, 171.41, 72.97],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        795.92, 459.79, 1, 800.46, 462.38, 1, 798.45, 454.57, 1, 796.56, 468.88,
+        1, 790.86, 445.79, 1, 785.54, 478.02, 2, 774.4, 435.74, 2, 758.62,
+        497.13, 2, 734.19, 447.08, 2, 755.95, 473.74, 1, 745.28, 467.71, 1,
+        726.48, 503.23, 2, 723.57, 472.2, 2, 670.3, 496.8, 2, 665.33, 476.73, 2,
+        646.17, 508.71, 2, 629.05, 494.9, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 99,
+      "image_id": 99,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12559.744599999998,
+      "bbox": [626.02, 434.76, 171.91, 73.06],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        793.41, 458.84, 1, 797.93, 461.5, 1, 795.99, 453.67, 1, 793.91, 467.9,
+        1, 788.53, 444.89, 1, 782.85, 477.02, 2, 772.04, 434.76, 2, 756.04,
+        496.18, 2, 731.86, 446.04, 2, 753.36, 472.57, 1, 742.7, 466.78, 1,
+        723.48, 502.45, 2, 720.58, 471.23, 2, 667.57, 495.85, 2, 662.51, 475.85,
+        2, 643.02, 507.82, 2, 626.02, 493.88, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 100,
+      "image_id": 100,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12614.247200000002,
+      "bbox": [622.98, 433.77, 172.42, 73.16],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        790.9, 457.9, 1, 795.4, 460.63, 1, 793.53, 452.78, 1, 791.26, 466.93, 1,
+        786.21, 444.0, 1, 780.16, 476.03, 2, 769.68, 433.77, 2, 753.46, 495.23,
+        2, 729.54, 445.0, 2, 750.77, 471.39, 1, 740.13, 465.84, 1, 720.47,
+        501.67, 2, 717.58, 470.27, 2, 664.84, 494.91, 2, 659.7, 474.97, 2,
+        639.87, 506.93, 2, 622.98, 492.86, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 101,
+      "image_id": 101,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12664.660799999989,
+      "bbox": [619.95, 432.79, 172.92, 73.24],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        788.38, 456.96, 1, 792.87, 459.76, 1, 791.06, 451.88, 1, 788.61, 465.95,
+        1, 783.88, 443.11, 1, 777.47, 475.03, 2, 767.32, 432.79, 2, 750.88,
+        494.28, 2, 727.22, 443.96, 2, 748.19, 470.22, 1, 737.56, 464.91, 1,
+        717.47, 500.89, 2, 714.59, 469.3, 2, 662.12, 493.96, 2, 656.88, 474.09,
+        2, 636.71, 506.03, 2, 619.95, 491.84, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 102,
+      "image_id": 102,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12717.621900000002,
+      "bbox": [616.91, 431.81, 173.43, 73.33],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        785.87, 456.02, 1, 790.34, 458.89, 1, 788.6, 450.99, 1, 785.96, 464.98,
+        1, 781.55, 442.21, 1, 774.77, 474.03, 2, 764.96, 431.81, 2, 748.3,
+        493.33, 2, 724.9, 442.92, 2, 745.6, 469.05, 1, 734.98, 463.97, 1,
+        714.46, 500.11, 2, 711.6, 468.33, 2, 659.39, 493.02, 2, 654.07, 473.21,
+        2, 633.56, 505.14, 2, 616.91, 490.81, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 103,
+      "image_id": 103,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12771.679899999997,
+      "bbox": [613.88, 430.82, 173.93, 73.43],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        783.36, 455.07, 1, 787.81, 458.02, 1, 786.14, 450.1, 1, 783.31, 464.0,
+        1, 779.23, 441.32, 1, 772.08, 473.03, 2, 762.6, 430.82, 2, 745.72,
+        492.38, 2, 722.57, 441.88, 2, 743.02, 467.87, 1, 732.41, 463.04, 1,
+        711.46, 499.32, 2, 708.6, 467.36, 2, 656.66, 492.07, 2, 651.26, 472.33,
+        2, 630.41, 504.25, 2, 613.88, 489.79, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 104,
+      "image_id": 104,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12824.828800000003,
+      "bbox": [610.84, 429.84, 174.44, 73.52],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        780.85, 454.13, 1, 785.28, 457.14, 1, 783.67, 449.2, 1, 780.66, 463.03,
+        1, 776.9, 440.43, 1, 769.39, 472.04, 2, 760.25, 429.84, 2, 743.14,
+        491.43, 2, 720.25, 440.84, 2, 740.43, 466.7, 1, 729.84, 462.11, 1,
+        708.45, 498.54, 2, 705.61, 466.39, 2, 653.93, 491.13, 2, 648.44, 471.45,
+        2, 627.25, 503.36, 2, 610.84, 488.77, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 105,
+      "image_id": 105,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12879.819000000005,
+      "bbox": [607.8, 428.85, 174.95, 73.62],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        778.34, 453.19, 1, 782.75, 456.27, 1, 781.21, 448.31, 1, 778.01, 462.05,
+        1, 774.58, 439.54, 1, 766.7, 471.04, 2, 757.89, 428.85, 2, 740.55,
+        490.48, 2, 717.93, 439.8, 2, 737.85, 465.53, 1, 727.27, 461.17, 1,
+        705.45, 497.76, 2, 702.61, 465.43, 2, 651.2, 490.18, 2, 645.63, 470.57,
+        2, 624.1, 502.47, 2, 607.8, 487.75, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 106,
+      "image_id": 106,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12932.4195,
+      "bbox": [604.77, 427.87, 175.45, 73.71],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        775.83, 452.24, 1, 780.22, 455.4, 1, 778.75, 447.41, 1, 775.36, 461.08,
+        1, 772.25, 438.64, 1, 764.0, 470.04, 2, 755.53, 427.87, 2, 737.97,
+        489.53, 2, 715.6, 438.76, 2, 735.26, 464.35, 1, 724.69, 460.24, 1,
+        702.45, 496.98, 2, 699.62, 464.46, 2, 648.47, 489.24, 2, 642.82, 469.69,
+        2, 620.95, 501.58, 2, 604.77, 486.73, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 107,
+      "image_id": 107,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 12985.848000000005,
+      "bbox": [601.73, 426.89, 175.96, 73.8],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        773.31, 451.3, 1, 777.69, 454.53, 1, 776.28, 446.52, 1, 772.71, 460.1,
+        1, 769.92, 437.75, 1, 761.31, 469.04, 2, 753.17, 426.89, 2, 735.39,
+        488.58, 2, 713.28, 437.71, 2, 732.68, 463.18, 1, 722.12, 459.3, 1,
+        699.44, 496.2, 2, 696.62, 463.49, 2, 645.74, 488.29, 2, 640.0, 468.81,
+        2, 617.79, 500.69, 2, 601.73, 485.71, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 108,
+      "image_id": 108,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13038.629400000002,
+      "bbox": [598.7, 425.9, 176.46, 73.89],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        770.8, 450.36, 1, 775.16, 453.65, 1, 773.82, 445.63, 1, 770.06, 459.12,
+        1, 767.6, 436.86, 1, 758.62, 468.04, 2, 750.81, 425.9, 2, 732.81,
+        487.63, 2, 710.96, 436.67, 2, 730.09, 462.01, 1, 719.55, 458.37, 1,
+        696.44, 495.42, 2, 693.63, 462.52, 2, 643.01, 487.34, 2, 637.19, 467.93,
+        2, 614.64, 499.79, 2, 598.7, 484.69, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 109,
+      "image_id": 109,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13092.240599999996,
+      "bbox": [595.66, 424.92, 176.97, 73.98],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        768.29, 449.42, 1, 772.63, 452.78, 1, 771.36, 444.73, 1, 767.41, 458.15,
+        1, 765.27, 435.96, 1, 755.93, 467.05, 2, 748.45, 424.92, 2, 730.23,
+        486.68, 2, 708.63, 435.63, 2, 727.5, 460.83, 1, 716.98, 457.43, 1,
+        693.43, 494.64, 2, 690.63, 461.55, 2, 640.28, 486.4, 2, 634.37, 467.05,
+        2, 611.49, 498.9, 2, 595.66, 483.67, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 110,
+      "image_id": 110,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13145.9436,
+      "bbox": [592.62, 423.94, 177.48, 74.07],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        765.78, 448.47, 1, 770.1, 451.91, 1, 768.89, 443.84, 1, 764.76, 457.17,
+        1, 762.94, 435.07, 1, 753.24, 466.05, 2, 746.09, 423.94, 2, 727.65,
+        485.73, 2, 706.31, 434.59, 2, 724.92, 459.66, 1, 714.4, 456.5, 1,
+        690.43, 493.86, 2, 687.64, 460.59, 2, 637.55, 485.45, 2, 631.56, 466.17,
+        2, 608.33, 498.01, 2, 592.62, 482.65, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 111,
+      "image_id": 111,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13200.776600000005,
+      "bbox": [589.59, 422.95, 177.98, 74.17],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        763.27, 447.53, 1, 767.57, 451.04, 1, 766.43, 442.95, 1, 762.11, 456.2,
+        1, 760.62, 434.18, 1, 750.54, 465.05, 2, 743.73, 422.95, 2, 725.07,
+        484.78, 2, 703.99, 433.55, 2, 722.33, 458.49, 1, 711.83, 455.57, 1,
+        687.43, 493.08, 2, 684.65, 459.62, 2, 634.82, 484.51, 2, 628.75, 465.28,
+        2, 605.18, 497.12, 2, 589.59, 481.63, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 112,
+      "image_id": 112,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13254.667399999998,
+      "bbox": [586.55, 421.97, 178.49, 74.26],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        760.76, 446.59, 1, 765.04, 450.16, 1, 763.97, 442.05, 1, 759.46, 455.22,
+        1, 758.29, 433.28, 1, 747.85, 464.05, 2, 741.37, 421.97, 2, 722.49,
+        483.83, 2, 701.66, 432.51, 2, 719.75, 457.31, 1, 709.26, 454.63, 1,
+        684.42, 492.3, 2, 681.65, 458.65, 2, 632.09, 483.56, 2, 625.93, 464.4,
+        2, 602.03, 496.23, 2, 586.55, 480.61, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 113,
+      "image_id": 113,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13309.696399999993,
+      "bbox": [583.52, 420.98, 178.99, 74.36],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        758.24, 445.64, 1, 762.51, 449.29, 1, 761.5, 441.16, 1, 756.81, 454.25,
+        1, 755.96, 432.39, 1, 745.16, 463.05, 2, 739.01, 420.98, 2, 719.91,
+        482.88, 2, 699.34, 431.47, 2, 717.16, 456.14, 1, 706.68, 453.7, 1,
+        681.42, 491.52, 2, 678.66, 457.68, 2, 629.36, 482.62, 2, 623.12, 463.52,
+        2, 598.87, 495.34, 2, 583.52, 479.59, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 114,
+      "image_id": 114,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13363.774999999998,
+      "bbox": [580.48, 420.0, 179.5, 74.45],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        755.73, 444.7, 1, 759.98, 448.42, 1, 759.04, 440.26, 1, 754.16, 453.27,
+        1, 753.64, 431.5, 1, 742.47, 462.06, 2, 736.65, 420.0, 2, 717.33,
+        481.93, 2, 697.02, 430.43, 2, 714.58, 454.97, 1, 704.11, 452.76, 1,
+        678.41, 490.73, 2, 675.66, 456.71, 2, 626.63, 481.67, 2, 620.3, 462.64,
+        2, 595.72, 494.45, 2, 580.48, 478.57, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 115,
+      "image_id": 115,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13415.400000000005,
+      "bbox": [577.45, 419.02, 180.0, 74.53],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        753.22, 443.76, 1, 757.45, 447.55, 1, 756.58, 439.37, 1, 751.51, 452.3,
+        1, 751.31, 430.61, 1, 739.77, 461.06, 2, 734.29, 419.02, 2, 714.75,
+        480.98, 2, 694.69, 429.39, 2, 711.99, 453.79, 1, 701.54, 451.83, 1,
+        675.41, 489.95, 2, 672.67, 455.75, 2, 623.9, 480.73, 2, 617.49, 461.76,
+        2, 592.57, 493.55, 2, 577.45, 477.55, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 116,
+      "image_id": 116,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13471.461300000008,
+      "bbox": [574.41, 418.03, 180.51, 74.63],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        750.71, 442.81, 1, 754.92, 446.68, 1, 754.11, 438.48, 1, 748.86, 451.32,
+        1, 748.98, 429.71, 1, 737.08, 460.06, 2, 731.93, 418.03, 2, 712.17,
+        480.03, 2, 692.37, 428.35, 2, 709.4, 452.62, 1, 698.97, 450.9, 1, 672.4,
+        489.17, 2, 669.67, 454.78, 2, 621.17, 479.78, 2, 614.68, 460.88, 2,
+        589.41, 492.66, 2, 574.41, 476.53, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 117,
+      "image_id": 117,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13525.814399999994,
+      "bbox": [571.37, 417.05, 181.02, 74.72],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        748.2, 441.87, 1, 752.39, 445.8, 1, 751.65, 437.58, 1, 746.21, 450.35,
+        1, 746.66, 428.82, 1, 734.39, 459.06, 2, 729.57, 417.05, 2, 709.59,
+        479.08, 2, 690.05, 427.3, 2, 706.82, 451.45, 1, 696.39, 449.96, 1,
+        669.4, 488.39, 2, 666.68, 453.81, 2, 618.44, 478.83, 2, 611.86, 460.0,
+        2, 586.26, 491.77, 2, 571.37, 475.51, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 118,
+      "image_id": 118,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13514.109300000002,
+      "bbox": [570.24, 416.58, 181.13, 74.61],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        747.03, 441.51, 1, 751.37, 445.37, 1, 750.59, 437.12, 1, 744.95, 449.94,
+        1, 745.4, 428.32, 1, 733.24, 458.87, 2, 728.01, 416.58, 2, 708.11,
+        478.71, 2, 688.64, 427.22, 2, 705.14, 451.24, 1, 694.65, 450.3, 1,
+        668.47, 487.94, 2, 665.81, 453.39, 2, 617.38, 478.23, 2, 610.95, 459.3,
+        2, 585.05, 491.19, 2, 570.24, 474.85, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 119,
+      "image_id": 119,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13500.567600000002,
+      "bbox": [569.1, 416.12, 181.24, 74.49],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        745.86, 441.14, 1, 750.34, 444.94, 1, 749.52, 436.66, 1, 743.69, 449.53,
+        1, 744.13, 427.82, 1, 732.1, 458.68, 2, 726.45, 416.12, 2, 706.64,
+        478.35, 2, 687.24, 427.14, 2, 703.45, 451.04, 1, 692.92, 450.64, 1,
+        667.54, 487.48, 2, 664.95, 452.96, 2, 616.32, 477.63, 2, 610.03, 458.61,
+        2, 583.84, 490.61, 2, 569.1, 474.18, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 120,
+      "image_id": 120,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13491.370400000009,
+      "bbox": [567.96, 415.65, 181.36, 74.39],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        744.7, 440.77, 1, 749.32, 444.52, 1, 748.46, 436.2, 1, 742.42, 449.13,
+        1, 742.87, 427.33, 1, 730.96, 458.5, 2, 724.89, 415.65, 2, 705.17,
+        477.99, 2, 685.83, 427.06, 2, 701.77, 450.83, 1, 691.18, 450.98, 1,
+        666.6, 487.03, 2, 664.08, 452.54, 2, 615.26, 477.02, 2, 609.12, 457.91,
+        2, 582.63, 490.04, 2, 567.96, 473.52, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 121,
+      "image_id": 121,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13478.848799999989,
+      "bbox": [566.83, 415.18, 181.46, 74.28],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        743.53, 440.41, 1, 748.29, 444.09, 1, 747.4, 435.73, 1, 741.16, 448.72,
+        1, 741.61, 426.83, 1, 729.81, 458.31, 2, 723.33, 415.18, 2, 703.7,
+        477.62, 2, 684.42, 426.98, 2, 700.09, 450.63, 1, 689.44, 451.32, 1,
+        665.67, 486.58, 2, 663.22, 452.11, 2, 614.2, 476.42, 2, 608.2, 457.21,
+        2, 581.42, 489.46, 2, 566.83, 472.85, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 122,
+      "image_id": 122,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13467.788599999998,
+      "bbox": [565.69, 414.71, 181.58, 74.17],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        742.36, 440.04, 1, 747.27, 443.66, 1, 746.33, 435.27, 1, 739.9, 448.32,
+        1, 740.34, 426.33, 1, 728.67, 458.12, 2, 721.78, 414.71, 2, 702.22,
+        477.26, 2, 683.02, 426.9, 2, 698.4, 450.42, 1, 687.7, 451.66, 1, 664.74,
+        486.12, 2, 662.35, 451.69, 2, 613.14, 475.81, 2, 607.29, 456.51, 2,
+        580.2, 488.88, 2, 565.69, 472.19, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 123,
+      "image_id": 123,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13454.144500000006,
+      "bbox": [564.55, 414.25, 181.69, 74.05],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        741.2, 439.67, 1, 746.24, 443.23, 1, 745.27, 434.81, 1, 738.64, 447.91,
+        1, 739.08, 425.83, 1, 727.53, 457.93, 2, 720.22, 414.25, 2, 700.75,
+        476.89, 2, 681.61, 426.82, 2, 696.72, 450.22, 1, 685.96, 452.0, 1,
+        663.8, 485.67, 2, 661.49, 451.26, 2, 612.08, 475.21, 2, 606.37, 455.81,
+        2, 578.99, 488.3, 2, 564.55, 471.53, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 124,
+      "image_id": 124,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13443.031400000014,
+      "bbox": [563.41, 413.78, 181.81, 73.94],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        740.03, 439.31, 1, 745.22, 442.8, 1, 744.21, 434.35, 1, 737.38, 447.5,
+        1, 737.82, 425.34, 1, 726.38, 457.74, 2, 718.66, 413.78, 2, 699.28,
+        476.53, 2, 680.2, 426.74, 2, 695.04, 450.01, 1, 684.22, 452.34, 1,
+        662.87, 485.22, 2, 660.62, 450.84, 2, 611.01, 474.61, 2, 605.45, 455.12,
+        2, 577.78, 487.72, 2, 563.41, 470.86, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 125,
+      "image_id": 125,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13430.415300000002,
+      "bbox": [562.28, 413.31, 181.91, 73.83],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        738.87, 438.94, 1, 744.19, 442.37, 1, 743.14, 433.88, 1, 736.11, 447.1,
+        1, 736.55, 424.84, 1, 725.24, 457.55, 2, 717.1, 413.31, 2, 697.81,
+        476.16, 2, 678.8, 426.67, 2, 693.35, 449.81, 1, 682.49, 452.68, 1,
+        661.94, 484.76, 2, 659.76, 450.41, 2, 609.95, 474.0, 2, 604.54, 454.42,
+        2, 576.57, 487.14, 2, 562.28, 470.2, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 126,
+      "image_id": 126,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13417.431299999995,
+      "bbox": [561.14, 412.85, 182.03, 73.71],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": false },
+      "keypoints": [
+        737.7, 438.57, 1, 743.17, 441.94, 1, 742.08, 433.42, 1, 734.85, 446.69,
+        1, 735.29, 424.34, 1, 724.09, 457.36, 2, 715.54, 412.85, 2, 696.34,
+        475.8, 2, 677.39, 426.59, 2, 691.67, 449.6, 1, 680.75, 453.02, 1,
+        661.01, 484.31, 2, 658.89, 449.99, 2, 608.89, 473.4, 2, 603.62, 453.72,
+        2, 575.36, 486.56, 2, 561.14, 469.53, 2
+      ],
+      "num_keypoints": 17
+    },
+    {
+      "id": 127,
+      "image_id": 127,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 13405.504000000003,
+      "bbox": [560.0, 412.38, 182.14, 73.6],
+      "iscrowd": 0,
+      "attributes": { "occluded": false, "track_id": 1, "keyframe": true },
+      "keypoints": [
+        736.53, 438.21, 1, 742.14, 441.51, 1, 741.02, 432.96, 1, 733.59, 446.28,
+        1, 734.03, 423.84, 2, 722.95, 457.17, 2, 713.98, 412.38, 2, 694.86,
+        475.44, 2, 675.98, 426.51, 2, 689.99, 449.4, 1, 679.01, 453.36, 1,
+        660.07, 483.85, 2, 658.02, 449.56, 2, 607.83, 472.79, 2, 602.71, 453.02,
+        2, 574.15, 485.98, 2, 560.0, 468.87, 2
+      ],
+      "num_keypoints": 17
+    }
+  ]
+}
