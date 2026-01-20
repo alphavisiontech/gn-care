@@ -15,9 +15,9 @@ import uuid
 from stomp_ws.client import Client
 
 # utils import functions
-from utils import iou, calculate_bbox_ratio
-from cam_utils import open_cam, reset_usb_devices
-from draw_utils import display_fall_detection_result, add_fps_info, create_side_by_side_display, add_performance_info
+from utils.algo_utils import iou, calculate_bbox_ratio
+from utils.cam_utils import open_cam, reset_usb_devices
+from utils.draw_utils import display_fall_detection_result, add_fps_info, create_side_by_side_display, add_performance_info
 
 # model import functions
 from ppyoloe.py_utils.coco_utils import COCO_test_helper

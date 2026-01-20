@@ -12,8 +12,8 @@ from collections import deque
 from rknn.api import RKNN
 
 # utils import functions
-from utils import iou, calculate_bbox_ratio
-from cam_utils import open_cam, reset_usb_devices
+from utils.algo_utils import iou, calculate_bbox_ratio
+from utils.cam_utils import open_cam, reset_usb_devices
 
 # model import functions
 from ppyoloe.py_utils.coco_utils import COCO_test_helper
