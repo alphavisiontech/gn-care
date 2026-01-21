@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw
 
 
 class PPYOLOEPredictor:
-    def __init__(self, model_dir, use_gpu=True, width=640, height=640, threshold=0.5, use_tensorrt=False):
+    def __init__(self, model_dir, labels_list_path, use_gpu=True, width=640, height=640, threshold=0.5, use_tensorrt=False):
         self.width = width
         self.height = height
         self.threshold = threshold
@@ -36,8 +36,7 @@ class PPYOLOEPredictor:
 
         # 获取输出的名称
         self.output_names = self.predictor.get_output_names()
-        
-        labels_list_path = f'../../dataset/label_list.txt' # hard coded path since the file should be exactly this 
+
         with open(labels_list_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
             self.labels = [line.replace('\n', '') for line in lines]
@@ -50,6 +49,7 @@ class PPYOLOEPredictor:
         img = img.astype(np.float32, copy=False)
         return img
 
+    # 预测图片
     def infer(self, im: list):
         scale_factor_list, image_list = [], []
         for i in range(len(im)):
@@ -62,49 +62,47 @@ class PPYOLOEPredictor:
         scale_factor = np.array(scale_factor_list).astype(np.float32)
         image = np.array(image_list).astype(np.float32)
 
-        # preprocess the input
+        # 设置输入
         self.image_handle.reshape(image.shape)
         self.scale_factor_handle.reshape(scale_factor.shape)
         self.image_handle.copy_from_cpu(image)
         self.scale_factor_handle.copy_from_cpu(scale_factor)
 
-        # run the predictor
+        # 运行predictor
         self.predictor.run()
 
-        # get the output
+        # 获取输出
         output_handle = self.predictor.get_output_handle(self.output_names[0])
         output_data = output_handle.copy_to_cpu()
         num_handle = self.predictor.get_output_handle(self.output_names[1])
         num_data = num_handle.copy_to_cpu()
         start_num = 0
-        bboxes, scores = [], []
+        results = []
         for num in num_data:
             end_num = start_num + num
             output = output_data[start_num:end_num]
             start_num = end_num
             expect_boxes = (output[:, 1] > self.threshold) & (output[:, 0] > -1)
             output = output[expect_boxes, :]
-            bbox, score = [], []
+            result = []
             for o in output:
-                if int(o[0]) == 0:
-                    bbox.append([int(o[2]), int(o[3]), int(o[4]), int(o[5])])
-                    score.append(o[1])
-                else:
-                    continue
-            bboxes.append(bbox)
-            scores.append(score)
-        return bboxes, scores 
+                result.append([self.labels[int(o[0])], o[1], int(o[2]), int(o[3]), int(o[4]), int(o[5])])
+            results.append(result)
+        return results
 
     # 对图像进行画框
     @staticmethod
-    def draw_box(img, bboxes, scores):
+    def draw_box(img, results, font_style):
         img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         draw = ImageDraw.Draw(img)
-        for i, (bbox, score) in enumerate(zip(bboxes, scores)):
+        for result in results:
+            bbox = result[2:]
+            label = result[0]
+            score = result[1]
             xmin, ymin, xmax, ymax = [int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3])]
             # 画人脸框
             draw.rectangle([xmin, ymin, xmax, ymax], outline=(0, 0, 255), width=2)
             # 绘制文本
-            draw.text((xmin, ymin), 'Conf: %0.2f' % (score), (0, 255, 0), font=None)
+            draw.text((xmin, ymin), '%s, %0.2f' % (label, score), (0, 255, 0), font=font_style)
         return cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
 

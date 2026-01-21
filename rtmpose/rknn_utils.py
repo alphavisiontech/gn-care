@@ -4,11 +4,10 @@ from typing import List, Tuple
 
 import cv2
 import numpy as np
-import onnxruntime as ort
 from rknn.api import RKNN
 
 def preprocess_rtmpose(
-    img: np.ndarray, input_size: Tuple[int, int] = (192, 256), bboxes: List[np.ndarray] = None, is_quantized: bool = True
+    img: np.ndarray, input_size: Tuple[int, int] = (192, 256), bboxes: List[np.ndarray] = None
 ) -> Tuple[List[np.ndarray], List[np.ndarray], List[np.ndarray]]:
     """Do preprocessing for RTMPose model inference for multiple people in a single image.
     
@@ -39,19 +38,36 @@ def preprocess_rtmpose(
     
     # Process each bounding box
     for bbox in bboxes:
+        # print(f"Processing bbox:{bbox}")
         # get center and scale
         center, scale = bbox_xyxy2cs(bbox, padding=1.25)
 
         # do affine transformation
         resized_img, scale = top_down_affine(input_size, scale, center, img)
+        # print(f"Resized image shape: {resized_img.shape}, Center: {center}, Scale: {scale}")
         
-        if is_quantized: # if it's quantized, no need for normalization 
-            resized_img = resized_img.astype(np.float32)
-        else: # if it's not quantized, normalize the image
-            mean = np.array([123.675, 116.28, 103.53], dtype=np.float32) 
-            std = np.array([58.389, 57.12, 57.375], dtype=np.float32)  
-            resized_img = resized_img.astype(np.float32)
-            resized_img = (resized_img - mean) / std
+        # normalization has been done during quantization so no need for normalization here 
+
+        # IMPORTANT: Ensure data is in uint8 format with values in [0, 255] range
+        # The RKNN model with built-in normalization expects this
+        # resized_img = np.clip(resized_img, 0, 255).astype(np.uint8) # replace any values that goes beyond [0, 255] with min/max
+        
+        
+        '''
+        mean = np.array([0.485, 0.456, 0.406], dtype=np.int8)
+        std = np.array([0.229, 0.224, 0.225], dtype=np.int8)
+        '''
+        
+        
+        mean = np.array([123.675, 116.28, 103.53], dtype=np.float32) 
+        std = np.array([58.389, 57.12, 57.375], dtype=np.float32)  
+        resized_img = resized_img.astype(np.float32)
+        resized_img = (resized_img - mean) / std
+        
+        '''
+        print(f"resized img: {resized_img}")
+        print(resized_img.dtype)
+        '''
         
         resized_img = resized_img.transpose(2, 0, 1)
 
@@ -79,7 +95,6 @@ def inference_multiple(rknn: RKNN, imgs: List[np.ndarray]) -> List[List[np.ndarr
     # Process each person's cropped image region
     for i, img_crop in enumerate(imgs):
         input_data = np.expand_dims(img_crop, axis=0)
-
         # build output
         outputs = rknn.inference(inputs=[input_data], data_format='nchw')
         all_outputs.append(outputs)
@@ -112,7 +127,11 @@ def postprocess_rtmpose_multiple(all_outputs: List[List[np.ndarray]],
     for outputs, center, scale in zip(all_outputs, centers, scales):
         # use simcc to decode
         simcc_x, simcc_y = outputs
+
         keypoints, scores = decode(simcc_x, simcc_y, simcc_split_ratio)
+
+        print(f"Decoded keypoints shape: {keypoints.shape}, Scores shape: {scores.shape}")
+        print(f"Keypoints stats - max: {keypoints.max()}, min: {keypoints.min()}")
 
         # Ensure correct shapes for coordinate transformation
         # keypoints: shape (N, K, 2) where N=1 (single person), K=num_keypoints
@@ -142,13 +161,12 @@ def process_multiple_people(img: np.ndarray,
                           rknn_model,
                           bboxes: List[np.ndarray] = None,
                           input_size: Tuple[int, int] = (192, 256),
-                          simcc_split_ratio: float = 2.0,
-                          is_quantized: bool = True):
+                          simcc_split_ratio: float = 2.0):
     """Complete pipeline to process multiple people in a single image.
 
     Args:
         img (np.ndarray): Input image containing multiple people.
-        sess (ort.InferenceSession): ONNXRuntime session.
+        rknn_model (RKNN model): the RTMPose model with RKNN format
         bboxes (List[np.ndarray], optional): List of bounding boxes for each person in format (x1, y1, x2, y2).
                                            If None, processes entire image as single person.
         input_size (tuple): Input image size in shape (w, h).
@@ -160,7 +178,7 @@ def process_multiple_people(img: np.ndarray,
         - all_scores (List[np.ndarray]): List of scores for each person in the image.
     """
     # Preprocessing - crop and preprocess regions for each person
-    resized_imgs, centers, scales = preprocess_rtmpose(img, input_size, bboxes, is_quantized)
+    resized_imgs, centers, scales = preprocess_rtmpose(img, input_size, bboxes)
     
     all_outputs = inference_multiple(rknn_model, resized_imgs)
     
@@ -478,7 +496,7 @@ def decode(simcc_x: np.ndarray, simcc_y: np.ndarray,
 
     return keypoints, scores
     
-def load_rknn_model(model_path: str) -> RKNN:
+def load_rknn_model(model_path: str, core_mask=RKNN.NPU_CORE_1) -> RKNN:
     """Load RKNN model.
 
     Args:
@@ -493,7 +511,7 @@ def load_rknn_model(model_path: str) -> RKNN:
         print("Load RKNN model failed")
         exit(rknn)
     
-    ret = rknn.init_runtime(target='rk3588', core_mask=RKNN.NPU_CORE_0_1_2)
+    ret = rknn.init_runtime(target='rk3588', core_mask=core_mask)
     if ret != 0:
         print("Init runtime failed")
         exit(rknn)

@@ -39,11 +39,13 @@ def fall_forward_check(kpts, upper_half_limit):
     nose_kpt_y = kpts[0][1] # Nose keypoint
     left_ankle_kpt_y = kpts[15][1]  # Left ankle keypoint
     right_ankle_kpt_y = kpts[16][1]  # Right ankle keypoint
-
+    
+    '''
     print(f"Nose keypoints vs nose_kpt_y > left_ankle_kpt_y: {nose_kpt_y > left_ankle_kpt_y}")
     print(f"Nose keypoints vs nose_kpt_y > right_ankle_kpt_y: {nose_kpt_y > right_ankle_kpt_y}")
     print(f"left_ankle_kpt_y < upper_half_limit: {left_ankle_kpt_y < upper_half_limit}")
     print(f"right_ankle_kpt_y < upper_half_limit: {right_ankle_kpt_y < upper_half_limit}")
+    '''
 
     if nose_kpt_y > left_ankle_kpt_y and nose_kpt_y > right_ankle_kpt_y and left_ankle_kpt_y < upper_half_limit and right_ankle_kpt_y < upper_half_limit:
         status = True  # person is upside down 
@@ -62,7 +64,7 @@ def fall_backward_check(kpts, backward_ratio_threshold=0.91):
     rHip_y = kpts[8][1]  # Right hip keypoint
 
     upper_body_ratio = abs(((lShoulder_y + rShoulder_y) / 2 ) / ((lHip_y + rHip_y) / 2 + 1e-5))
-    print(f"Fall Backward Check - Upper body ratio: {upper_body_ratio:.3f}")
+    # print(f"Fall Backward Check - Upper body ratio: {upper_body_ratio:.3f}")
 
     if upper_body_ratio > backward_ratio_threshold:
         status = True  # person is falling backward
@@ -72,11 +74,15 @@ def fall_backward_check(kpts, backward_ratio_threshold=0.91):
 def calculate_bbox_ratio(person_bboxes, person_scores, keypoints_list, kpts_scores_list, 
                             backward_ratio_threshold=0.91, keypoint_threshold=0.3): 
     """Calculate ratio of person bbox (w:h)"""
-    if not person_bboxes:
+    if person_bboxes.size == 0:
         return [], []
     
     person_area_ratio = []
-
+    '''
+    print(f"person_boxes:{person_bboxes}, type:{type(person_bboxes)}, size: {person_bboxes.size}")
+    print(f"keypoints_list:{keypoints_list}, type:{type(keypoints_list)}")
+    print(f"kpts_scores_list:{kpts_scores_list}, type:{type(kpts_scores_list)}")
+    '''
     for bbox, keypoints, kpts_scores in zip(person_bboxes, keypoints_list, kpts_scores_list):
         x1, y1, x2, y2 = bbox
         width = x2 - x1 # x-axis

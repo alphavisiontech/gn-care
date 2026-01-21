@@ -2,6 +2,7 @@ import os
 import cv2
 import sys
 import argparse
+from rknn.api import RKNN
 
 from .py_utils.coco_utils import COCO_test_helper
 import numpy as np
@@ -145,6 +146,18 @@ def post_process(input_data, obj_threshold):
                 nboxes.append(b[keep])
                 nclasses.append(c[keep])
                 nscores.append(s[keep])
+                
+        elif c == 59: 
+            inds = np.where(classes == c)
+            b = boxes[inds]
+            c = classes[inds]
+            s = scores[inds]
+            keep = nms_boxes(b, s)
+
+            if len(keep) != 0:
+                nboxes.append(b[keep])
+                nclasses.append(c[keep])
+                nscores.append(s[keep])
 
     if not nclasses and not nscores:
         return None, None, None
@@ -168,7 +181,7 @@ def draw(image, boxes, scores, classes):
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.6, (0, 0, 255), 2)
 
-def setup_model(model_path, target='rk3588', device_id=None):
+def setup_model(model_path, target='rk3588', device_id=None, core_mask=RKNN.NPU_CORE_0):
     if model_path.endswith('.pt') or model_path.endswith('.torchscript'):
         platform = 'pytorch'
         from .py_utils.pytorch_executor import Torch_model_container
@@ -176,7 +189,7 @@ def setup_model(model_path, target='rk3588', device_id=None):
     elif model_path.endswith('.rknn'):
         platform = 'rknn'
         from .py_utils.rknn_executor import RKNN_model_container 
-        model = RKNN_model_container(model_path, target, device_id)
+        model = RKNN_model_container(model_path, target, device_id, core_mask)
     elif model_path.endswith('onnx'):
         platform = 'onnx'
         from .py_utils.rknn_executor import ONNX_model_container

@@ -2,7 +2,7 @@ from rknn.api import RKNN
 
 
 class RKNN_model_container():
-    def __init__(self, model_path, target='rk3588', device_id=None) -> None:
+    def __init__(self, model_path, target='rk3588', device_id=None, core_mask=RKNN.NPU_CORE_0) -> None:
         rknn = RKNN()
 
         # Direct Load RKNN Model
@@ -12,7 +12,7 @@ class RKNN_model_container():
         if target==None:
             ret = rknn.init_runtime()
         else:
-            ret = rknn.init_runtime(target=target, device_id=device_id, core_mask=RKNN.NPU_CORE_0_1_2)
+            ret = rknn.init_runtime(target=target, device_id=device_id, core_mask=core_mask)
         if ret != 0:
             print('Init runtime environment failed')
             exit(ret)
