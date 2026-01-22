@@ -469,15 +469,15 @@ def process_video_stream_threaded(args, det_model, pose_model, co_helper, cap, w
                 left_frame, right_frame, fall_result, result_frame_count = result
 
 
-                temp_msg = {"timestamp": start_time, "device_id": device_id, "camera_id": "",
-                          "bed_list": [], "track_id": [], "bbox": [],
-                          "skeleton": [], "out": [], "fall_filter": [True if fall_result['is_fall'] else False],
-                          "wave_filter": [False], "is_bed": [True if fall_result['is_in_bed'] else False],
-                          "Behaviour": ["Normal"], "skeleton_to_plot": []}
+                # temp_msg = {"timestamp": start_time, "device_id": device_id, "camera_id": "",
+                #           "bed_list": [], "track_id": [], "bbox": [],
+                #           "skeleton": [], "out": [], "fall_filter": [True if fall_result['is_fall'] else False],
+                #           "wave_filter": [False], "is_bed": [True if fall_result['is_in_bed'] else False],
+                #           "Behaviour": ["Normal"], "skeleton_to_plot": []}
                 
-                encode_msg = json.dumps(temp_msg, ensure_ascii=False).encode('utf-8')
-                stomp_client.send("/app/detect", body=json.dumps({'topic': topic, 'message': encode_msg}))
-                print(f"Sent message to STOMP successfully")
+                # encode_msg = json.dumps(temp_msg, ensure_ascii=False).encode('utf-8')
+                # stomp_client.send("/app/detect", body=json.dumps({'topic': topic, 'message': encode_msg}))
+                # print(f"Sent message to STOMP successfully")
 
                 if args.show_display:
                     # Calculate and display FPS
@@ -519,18 +519,18 @@ def get_mac():
         if "ether" in line:
             return line.strip().split()[1]    
         
-def connect_stomp():
-    print('conect stomp')
-    if stomp_client:
-        stomp_client.connect(errorCallback=reconnect_stomp)
+# def connect_stomp():
+#     print('conect stomp')
+#     if stomp_client:
+#         stomp_client.connect(errorCallback=reconnect_stomp)
     
-def reconnect_stomp():
-    print('reconnect')
-    if stomp_client:
-        stomp_client.disconnect()
-        time.sleep(10)
-        if stomp_client:
-            connect_stomp()
+# def reconnect_stomp():
+#     print('reconnect')
+#     if stomp_client:
+#         stomp_client.disconnect()
+#         time.sleep(10)
+#         if stomp_client:
+#             connect_stomp()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Multi-person pose estimation with PP-YOLOE + RTMPose + CTRGCN')
@@ -568,33 +568,33 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    try:
-        topic = "action_stream"       
+    # try:
+    #     topic = "action_stream"       
 
-        device_id = str(uuid.getnode())
-        mac_addr = str(get_mac())
+    #     device_id = str(uuid.getnode())
+    #     mac_addr = str(get_mac())
 
-        # 江门 server
-        # websocket_url = 'ws://192.168.1.190:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-        # websocket_url = 'ws://192.168.31.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
+    #     # 江门 server
+    #     # websocket_url = 'ws://192.168.1.190:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
+    #     # websocket_url = 'ws://192.168.31.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
 
-        # 香港 server 
-        websocket_url = 'ws://192.168.69.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress='+mac_addr
+    #     # 香港 server 
+    #     websocket_url = 'ws://192.168.69.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress='+mac_addr
 
-        # 测试 server
-        # websocket_url = 'ws://118.140.22.68:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-        # websocket_url = 'ws://119.23.65.146:28080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
+    #     # 测试 server
+    #     # websocket_url = 'ws://118.140.22.68:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
+    #     # websocket_url = 'ws://119.23.65.146:28080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
 
-        # stomp client setup
-        stomp_client = Client(websocket_url)
+    #     # stomp client setup
+    #     stomp_client = Client(websocket_url)
         
-        # connect to the endpoint
-        stomp_client.connect(errorCallback=reconnect_stomp)
+    #     # connect to the endpoint
+    #     stomp_client.connect(errorCallback=reconnect_stomp)
 
-    except Exception as e:
-        print(f"Error connecting to STOMP server: {e}")
-        logging.error(f"Error connecting to STOMP server: {e}")
-        stomp_client = None
+    # except Exception as e:
+    #     print(f"Error connecting to STOMP server: {e}")
+    #     logging.error(f"Error connecting to STOMP server: {e}")
+    #     stomp_client = None
 
     try:
         # Validate arguments and model files
