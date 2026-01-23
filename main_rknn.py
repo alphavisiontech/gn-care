@@ -1,22 +1,20 @@
 import argparse
-import json
 import cv2
 import numpy as np
 import os 
 import time 
+import subprocess
 import logging
 import sys
 import threading
 import queue
 from collections import deque
 from rknn.api import RKNN
-import uuid
 
 from utils.cam_utils import open_cam, reset_usb_devices
 from utils.rules_utils import iou, calculate_bbox_ratio
-from utils.draw_utils import add_fps_info, add_performance_info, create_side_by_side_display, display_fall_detection_result
+from utils.draw_utils import display_fall_detection_result, add_fps_info, add_performance_info, create_side_by_side_display
 
-from stomp_ws.client import Client
 from ppyoloe.py_utils.coco_utils import COCO_test_helper
 from ppyoloe.rknn_utils import setup_model, post_process, draw
 from rtmpose.rknn_utils import process_multiple_people, visualize_keypoints, load_rknn_model
@@ -25,7 +23,7 @@ from rtmpose.rknn_utils import process_multiple_people, visualize_keypoints, loa
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='gn-care.log',
+    filename='pose_estimation.log',
     filemode='a',
 )
 
@@ -119,11 +117,13 @@ class ThreadedFrameProcessor:
                 # Run detection
                 outputs = self.det_model.run([input_data])
                 boxes, classes, scores = post_process(outputs, self.human_det_threshold)
-                
-                # print(f"boxes:{boxes}, type:{type(boxes)}")
-                # print(f"scores:{scores}, type:{type(scores)}")
+                '''
+                print(f"boxes:{boxes}, type:{type(boxes)}")
+                print(f"scores:{scores}, type:{type(scores)}")
+                '''
 
                 person_bboxes = []
+                person_classes = []
                 person_scores = []
 
                 bed_bboxes = []
@@ -133,6 +133,7 @@ class ThreadedFrameProcessor:
                     for box, cls, score in zip(boxes, classes, scores):
                         if cls == 0:  # Person class
                             person_bboxes.append(box)
+                            person_classes.append(cls)
                             person_scores.append(score)
                         elif cls == 59:  # Bed class
                             bed_bboxes.append(box)
@@ -145,25 +146,26 @@ class ThreadedFrameProcessor:
                 assert len(bed_bboxes) == len(bed_scores), "Mismatch in bed boxes and scores length"
                 
                 person_bboxes = np.array(person_bboxes)
+                person_classes = np.array(person_classes)
                 person_scores = np.array(person_scores)
                 bed_bboxes = np.array(bed_bboxes)
                 bed_scores = np.array(bed_scores)
                 
-                # print(f"person_boxes:{person_bboxes}, type:{type(person_bboxes)}")
-                # print(f"person_scores:{person_scores}, type:{type(person_scores)}")
-                # print(f"bed_boxes:{bed_bboxes}, type:{type(bed_bboxes)}")
-                # print(f"bed_scores:{bed_scores}, type:{type(bed_scores)}")
+                '''
+                print(f"person_boxes:{person_bboxes}, type:{type(person_bboxes)}")
+                print(f"person_scores:{person_scores}, type:{type(person_scores)}")
+                print(f"bed_boxes:{bed_bboxes}, type:{type(bed_bboxes)}")
+                print(f"bed_scores:{bed_scores}, type:{type(bed_scores)}")
+                '''
 
                 # Pass to pose estimation
-                self.detection_queue.put((frame, person_bboxes, person_scores, bed_bboxes, bed_scores, frame_count, verbose))
+                self.detection_queue.put((frame, person_bboxes, person_classes, person_scores, bed_bboxes, bed_scores, frame_count, verbose))
                 self.input_queue.task_done()
                 
             except queue.Empty:
-                logging.debug("Detection worker queue empty, continuing...")
                 continue
             except Exception as e:
                 print(f"Detection worker error: {e}")
-                logging.error(f"Detection worker error: {e}")
                 continue
     
     def _pose_worker(self):
@@ -174,7 +176,7 @@ class ThreadedFrameProcessor:
                 if detection_data is None:
                     break
 
-                frame, person_bboxes, person_scores, bed_bboxes, bed_scores, frame_count, verbose = detection_data
+                frame, person_bboxes, person_classes, person_scores, bed_bboxes, bed_scores, frame_count, verbose = detection_data
 
                 # Run pose estimation
                 keypoints_list = []
@@ -185,17 +187,16 @@ class ThreadedFrameProcessor:
                     keypoints_list, kpts_scores_list = process_multiple_people(
                         frame, self.pose_model, real_bboxes, Config.MODEL_INPUT_SIZE
                     )
+                    person_bboxes = real_bboxes
                 
                 # Pass to fall detection
-                self.pose_queue.put((frame, keypoints_list, kpts_scores_list, person_bboxes, person_scores, bed_bboxes, bed_scores, frame_count, verbose))
+                self.pose_queue.put((frame, keypoints_list, kpts_scores_list, person_bboxes, person_classes, person_scores, bed_bboxes, bed_scores, frame_count, verbose))
                 self.detection_queue.task_done()
                 
             except queue.Empty:
-                logging.debug("Pose worker queue empty, continuing...")
                 continue
             except Exception as e:
                 print(f"Pose worker error: {e}")
-                logging.error(f"Pose worker error: {e}")
                 continue
     
     def _fall_detection_worker(self):
@@ -206,7 +207,7 @@ class ThreadedFrameProcessor:
                 if pose_data is None:
                     break
 
-                frame, keypoints_list, kpts_scores_list, person_bboxes, person_scores, bed_bboxes, bed_scores, frame_count, _ = pose_data
+                frame, keypoints_list, kpts_scores_list, person_bboxes, person_classes, person_scores, bed_bboxes, bed_scores, frame_count, _ = pose_data
 
                 # Initialize default fall result
                 fall_result = {
@@ -225,44 +226,40 @@ class ThreadedFrameProcessor:
             
                 reason = "ratio"
                 for det_idx, (ratio, score) in enumerate(zip(ratio_list, person_scores)):
+                    print(f"Detection {det_idx}: BBox ratio = {ratio:.3f}, Score = {score:.3f}")
                     in_bed_status = in_bed_status_list[det_idx] if det_idx < len(in_bed_status_list) else False
 
-                    # print(f"Detection {det_idx}: ratio: {ratio}, in bed status = {in_bed_status}")
+                    print(f"Detection {det_idx}: ratio: {ratio}, in bed status = {in_bed_status}")
 
                     if ratio > self.ratio_threshold and score >= self.human_det_threshold and not in_bed_status:
                         if ratio == 5:
                             reason = "forward"
                         elif ratio == 6:
                             reason = "backward"
-                        print("Person detected -- Fall")
+                        print("Person detected with bbox ratio indicating fall")
                         print("Ratio: ", ratio)
                         fall_result = {
                             'predicted_class': "Fall",
                             'human_det_confidence': score,
                             'is_fall': True,
-                            'is_in_bed': False,
                             'status': f'fall_detected_{reason}',
                             'fall_det_index': int(det_idx) 
                         }
                     if in_bed_status and score >= self.human_det_threshold:
-                        print("Person detected -- In bed")
+                        print("Person detected in bed, no fall")
                         print("Ratio: ", ratio)
                         fall_result = {
                             'predicted_class': "No Fall",
                             'human_det_confidence': score,
                             'is_fall': False,
-                            'is_in_bed': True,
                             'status': 'person_in_bed',
                             'fall_det_index': None,
                         }
                     else: 
-                        print("Person detected -- No Fall")
-                        print("Ratio: ", ratio)
                         fall_result = { 
                             'predicted_class': "No Fall",
                             'confidence': score,
                             'is_fall': False,
-                            'is_in_bed': False,
                             'status': 'no_fall_detected',
                             'fall_det_index': None,
                         }    
@@ -273,9 +270,11 @@ class ThreadedFrameProcessor:
                 
                 # Visualize keypoints on both frames
                 if keypoints_list is not None and len(keypoints_list) > 0:
+                    left_frame = draw(left_frame, person_bboxes, person_scores, person_classes)
                     left_frame = visualize_keypoints(
                         left_frame, keypoints_list, kpts_scores_list, thr=self.args.keypoint_threshold
                     )
+                    right_frame = draw(right_frame, person_bboxes, person_scores, person_classes)
                     right_frame = visualize_keypoints(
                         right_frame, keypoints_list, kpts_scores_list, thr=self.args.keypoint_threshold
                     )
@@ -296,10 +295,8 @@ class ThreadedFrameProcessor:
                 self.pose_queue.task_done()
                 
             except queue.Empty:
-                logging.debug("Fall detection worker queue empty, continuing...")
                 continue
             except Exception as e:
-                logging.error(f"Fall detection worker error: {e}. Cannot return and display fall detection result.")
                 print(f"Fall detection worker error: {e}")
                 continue
     
@@ -339,7 +336,6 @@ class ThreadedFrameProcessor:
         try:
             return self.result_queue.get(timeout=timeout)
         except queue.Empty:
-            logging.debug("Result queue empty, no result to return")
             return None
     
     def stop(self):
@@ -389,7 +385,6 @@ def validate_model_files(args):
     
     for model_path, model_name in models:
         if not os.path.exists(model_path):
-            logging.error(f"{model_name} model not found: {model_path}")
             raise FileNotFoundError(f"{model_name} model not found: {model_path}")
 
 def validate_input_source(args):
@@ -403,31 +398,21 @@ def validate_input_source(args):
     
     # Check if source file exists for image/video
     if args.input_type in ['image', 'video'] and not os.path.exists(args.source):
-        logging.error(f"Source file not found: {args.source}")
         raise FileNotFoundError(f"Source file not found: {args.source}")
 
 def initialize_models(args):
     """Initialize all models and return them"""
-    try: 
-        # Initialize detection model
-        det_model, platform = setup_model(args.ppyoloe_model, core_mask=NPUCoreConfig.get_core_mask('ppyoloe'))
-        co_helper = COCO_test_helper(enable_letter_box=True)
-        print(f"PP-YOLOE model loaded from {args.ppyoloe_model}")
-        logging.info(f"PP-YOLOE model loaded from {args.ppyoloe_model}")
-    except Exception as e:
-        logging.error(f"Error initializing detection model: {e}")
-        raise RuntimeError(f"Error initializing detection model: {e}")
+    # Initialize detection model
+    det_model, platform = setup_model(args.ppyoloe_model, core_mask=NPUCoreConfig.get_core_mask('ppyoloe'))
+    co_helper = COCO_test_helper(enable_letter_box=True)
+    print(f"PP-YOLOE model loaded from {args.ppyoloe_model}")
     
-    try:
-        # Initialize pose estimation model
-        pose_model = load_rknn_model(args.rtmpose_model, core_mask=NPUCoreConfig.get_core_mask('rtmpose'))
-        print(f"RTMPose model loaded from {args.rtmpose_model}")
-        logging.info(f"RTMPose model loaded from {args.rtmpose_model}")
-    except Exception as e:
-        logging.error(f"Error initializing models: {e}")
-        raise RuntimeError(f"Error initializing models: {e}")
+    # Initialize pose estimation model
+    pose_model = load_rknn_model(args.rtmpose_model, core_mask=NPUCoreConfig.get_core_mask('rtmpose'))
+    print(f"RTMPose model loaded from {args.rtmpose_model}")
     
     return det_model, pose_model, co_helper
+
 
 def process_video_stream_threaded(args, det_model, pose_model, co_helper, cap, window_name, current_usb_path, is_webcam=False):
     """Process video stream using multi-threading for improved performance"""
@@ -467,43 +452,40 @@ def process_video_stream_threaded(args, det_model, pose_model, co_helper, cap, w
             result = threaded_processor.get_result(timeout=0.001)
             if result is not None:
                 left_frame, right_frame, fall_result, result_frame_count = result
-
-
-                # temp_msg = {"timestamp": start_time, "device_id": device_id, "camera_id": "",
-                #           "bed_list": [], "track_id": [], "bbox": [],
-                #           "skeleton": [], "out": [], "fall_filter": [True if fall_result['is_fall'] else False],
-                #           "wave_filter": [False], "is_bed": [True if fall_result['is_in_bed'] else False],
-                #           "Behaviour": ["Normal"], "skeleton_to_plot": []}
+                confidence = fall_result.get('human_det_confidence', 0.0)
                 
-                # encode_msg = json.dumps(temp_msg, ensure_ascii=False).encode('utf-8')
-                # stomp_client.send("/app/detect", body=json.dumps({'topic': topic, 'message': encode_msg}))
-                # print(f"Sent message to STOMP successfully")
+                # Log results
+                if fall_result:
+                    print(f"Frame {result_frame_count} - Fall detection: {fall_result['predicted_class']} "
+                          f"(confidence: {confidence:.3f})")
+                    if fall_result.get('transition_detected'):
+                        print(f"Frame {result_frame_count} - Transition: {fall_result['transition_detected']}")
+                    print(f"Frame {result_frame_count} - Consecutive falls: {threaded_processor.consecutive_falls}")
+                print()  # Empty line for readability
 
-                if args.show_display:
-                    # Calculate and display FPS
-                    current_time = time.time()
-                    fps_value = 1.0 / (current_time - fps_time)
-                    fps_time = current_time
-                    
-                    # Track processing time
-                    processing_time = current_time - start_time
-                    processing_times.append(processing_time)
-                    
-                    # Get queue sizes for monitoring
-                    queue_sizes = threaded_processor.get_queue_sizes()
-                    
-                    # Add performance info to the right frame
-                    right_frame = add_fps_info(right_frame, fps_value, result_frame_count)
-                    # right_frame = add_performance_info(right_frame, processing_times, queue_sizes, Config.QUEUE_SIZE)
-                    
-                    # Create side-by-side display
-                    combined_frame = create_side_by_side_display(left_frame, right_frame)
-                    
-                    # Display the combined frame
-                    cv2.imshow(window_name, combined_frame)
+                # Calculate and display FPS
+                current_time = time.time()
+                fps_value = 1.0 / (current_time - fps_time)
+                fps_time = current_time
+                
+                # Track processing time
+                processing_time = current_time - start_time
+                processing_times.append(processing_time)
+                
+                # Get queue sizes for monitoring
+                queue_sizes = threaded_processor.get_queue_sizes()
+                
+                # Add performance info to the right frame
+                right_frame = add_fps_info(right_frame, fps_value, result_frame_count)
+                # right_frame = add_performance_info(right_frame, processing_times, queue_sizes)
+                
+                # Create side-by-side display
+                combined_frame = create_side_by_side_display(left_frame, right_frame)
+                
+                # Display the combined frame
+                cv2.imshow(window_name, combined_frame)
             
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                logging.debug("Quit signal received, exiting...")
                 break
     
     finally:
@@ -513,24 +495,6 @@ def process_video_stream_threaded(args, det_model, pose_model, co_helper, cap, w
         cv2.destroyAllWindows()
     
     return cap if is_webcam else None
-
-def get_mac():
-    for line in os.popen("ifconfig"):
-        if "ether" in line:
-            return line.strip().split()[1]    
-        
-# def connect_stomp():
-#     print('conect stomp')
-#     if stomp_client:
-#         stomp_client.connect(errorCallback=reconnect_stomp)
-    
-# def reconnect_stomp():
-#     print('reconnect')
-#     if stomp_client:
-#         stomp_client.disconnect()
-#         time.sleep(10)
-#         if stomp_client:
-#             connect_stomp()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Multi-person pose estimation with PP-YOLOE + RTMPose + CTRGCN')
@@ -562,40 +526,10 @@ if __name__ == "__main__":
                         help='Input image shape for the model (default: 640,640)')
     parser.add_argument('--output-dir', type=str, default='.',
                         help='Output directory for results (default: current directory)')
-    parser.add_argument('--show-display', action='store_true',
-                        help='Show display window with results')
     
 
     args = parser.parse_args()
     
-    # try:
-    #     topic = "action_stream"       
-
-    #     device_id = str(uuid.getnode())
-    #     mac_addr = str(get_mac())
-
-    #     # 江门 server
-    #     # websocket_url = 'ws://192.168.1.190:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-    #     # websocket_url = 'ws://192.168.31.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-
-    #     # 香港 server 
-    #     websocket_url = 'ws://192.168.69.250:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress='+mac_addr
-
-    #     # 测试 server
-    #     # websocket_url = 'ws://118.140.22.68:8080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-    #     # websocket_url = 'ws://119.23.65.146:28080/resource/websocket?loginType=1&clientId='+device_id+'&clientMacAddress=00:00:a4:0f:ef:93'
-
-    #     # stomp client setup
-    #     stomp_client = Client(websocket_url)
-        
-    #     # connect to the endpoint
-    #     stomp_client.connect(errorCallback=reconnect_stomp)
-
-    # except Exception as e:
-    #     print(f"Error connecting to STOMP server: {e}")
-    #     logging.error(f"Error connecting to STOMP server: {e}")
-    #     stomp_client = None
-
     try:
         # Validate arguments and model files
         validate_input_source(args)
@@ -603,7 +537,7 @@ if __name__ == "__main__":
         
         print(f"Detection image shape: {[int(s) for s in args.image_shape.split(',')]}")
         print(f"Threading enabled: {args.enable_threading}")
-
+        
         # Initialize models
         det_model, pose_model, co_helper = initialize_models(args)
         
@@ -616,6 +550,7 @@ if __name__ == "__main__":
             window_name = 'PP-YOLOE + RTMPose + CTRGCN Fall Detection - Video (Threaded)'
             cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
             process_video_stream_threaded(args, det_model, pose_model, co_helper, cap, window_name, is_webcam=False)
+
             
         else:  # webcam
             window_name = 'PP-YOLOE + RTMPose + CTRGCN Fall Detection - Webcam (Threaded)'

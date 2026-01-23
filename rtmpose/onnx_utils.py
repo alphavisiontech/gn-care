@@ -43,11 +43,13 @@ def preprocess_rtmpose(
 
         # do affine transformation
         resized_img, scale = top_down_affine(input_size, scale, center, img)
+        print(f"Resized image shape: {resized_img.shape}, Center: {center}, Scale: {scale}")
 
         # normalize image
         mean = np.array([123.675, 116.28, 103.53])
         std = np.array([58.395, 57.12, 57.375])
         resized_img = (resized_img - mean) / std
+        print(f"Normalized image stats - max: {resized_img.max():.3f}, min: {resized_img.min():.3f}")
 
         resized_imgs.append(resized_img)
         centers.append(center)
@@ -89,9 +91,9 @@ def inference_multiple(sess: ort.InferenceSession, imgs: List[np.ndarray]) -> Li
     all_outputs = []
     
     # Process each person's cropped image region
-    for i, img_crop in enumerate(imgs):
+    for img_crop in imgs:
         # build input - transpose to CHW format for ONNX model
-        input_data = np.array([img_crop.transpose(2, 0, 1)], dtype=np.float32)  # Ensure float32
+        input_data = [img_crop.transpose(2, 0, 1)]
 
         # build output
         sess_input = {sess.get_inputs()[0].name: input_data}
@@ -174,8 +176,17 @@ def postprocess_rtmpose_multiple(all_outputs: List[List[np.ndarray]],
     for outputs, center, scale in zip(all_outputs, centers, scales):
         # use simcc to decode
         simcc_x, simcc_y = outputs
+        print(f"SimCC outputs - X shape: {simcc_x.shape}, Y shape: {simcc_y.shape}")
+        print(f"SimCC X stats - max: {simcc_x.max()}, min: {simcc_x.min()}")
+        print(f"SimCC Y stats - max: {simcc_y.max()}, min: {simcc_y.min()}")
+        print(f"Center: {center}, Scale: {scale}")
+        print(f"Model input size: {model_input_size}")
 
         keypoints, scores = decode(simcc_x, simcc_y, simcc_split_ratio)
+        
+        print(f"Decoded keypoints shape: {keypoints.shape}, Scores shape: {scores.shape}")
+        print(f"Keypoints stats - max: {keypoints.max()}, min: {keypoints.min()}")
+        print(f"Scores stats - max: {scores.max()}, min: {scores.min()}")
 
         # Ensure correct shapes for coordinate transformation
         # keypoints: shape (N, K, 2) where N=1 (single person), K=num_keypoints
@@ -189,7 +200,8 @@ def postprocess_rtmpose_multiple(all_outputs: List[List[np.ndarray]],
         # Rescale keypoints from model coordinates to image coordinates
         # keypoints is (1, K, 2), we need to broadcast correctly
         keypoints = keypoints / model_input_size_array * scale + center - scale / 2
-
+        print(f"Rescaled keypoints stats - max: {keypoints.max()}, min: {keypoints.min()}")
+        
         # Remove batch dimension for compatibility with visualization
         keypoints = keypoints.squeeze(0)  # Shape: (K, 2)
         scores = scores.squeeze(0)  # Shape: (K,)
@@ -509,7 +521,7 @@ def get_simcc_maximum(simcc_x: np.ndarray,
     N, K, Wx = simcc_x.shape
     simcc_x = simcc_x.reshape(N * K, -1)
     simcc_y = simcc_y.reshape(N * K, -1)
-    
+
     # get maximum value locations
     x_locs = np.argmax(simcc_x, axis=1)
     y_locs = np.argmax(simcc_y, axis=1)
